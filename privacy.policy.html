@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Privacy Policy - The Fitness Professor</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <style>
+        /* ===== Mobile Menu Toggle ===== */
+        .menu-toggle {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .site-brand {
+                display: flex;
+                align-items: center;
+            }
+
+            .menu-toggle {
+                display: block;
+                margin-left: auto;
+                font-size: 32px;
+                margin-right: 10px;
+                color: #fff;
+                cursor: pointer;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .header-menu {
+                display: none;
+                width: 100%;
+            }
+
+            header.site-header.active .header-menu {
+                display: block;
+            }
+
+            .main-menu {
+                flex-direction: column;
+                background: #000;
+            }
+        }
+
+        /* ===== Page Hero Banner ===== */
+        .page-hero {
+            background: #000;
+            padding: 70px 0 60px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .page-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, #000 60%, #1a0000 100%);
+        }
+
+        .page-hero::after {
+            content: 'PRIVACY';
+            position: absolute;
+            right: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-family: 'Urbanist', sans-serif;
+            font-size: 120px;
+            font-weight: 900;
+            color: rgba(254, 0, 0, 0.06);
+            letter-spacing: -4px;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+
+        .page-hero .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .page-hero .breadcrumb-nav {
+            margin-bottom: 16px;
+        }
+
+        .page-hero .breadcrumb-nav a {
+            color: #fe0000;
+            text-decoration: none;
+             font-size: 16px;
+            font-weight: 500;
+        }
+
+        .page-hero .breadcrumb-nav span {
+            color: rgba(255, 255, 255, 0.4);
+            margin: 0 8px;
+             font-size: 16px;
+        }
+
+        .page-hero .breadcrumb-nav .current {
+            color: rgba(255, 255, 255, 0.6);
+             font-size: 16px;
+        }
+
+        .page-hero h1 {
+            font-family: 'Urbanist', sans-serif;
+            font-size: clamp(36px, 5vw, 56px);
+            font-weight: 800;
+            color: #fff;
+            margin: 0;
+            line-height: 1.1;
+        }
+
+        .page-hero h1 span {
+            color: #fe0000;
+        }
+
+        .page-hero .updated-date {
+            margin-top: 16px;
+            color: rgba(255, 255, 255, 0.45);
+             font-size: 16px;
+        }
+
+        /* ===== Privacy Policy Content ===== */
+        .privacy-content-section {
+            padding: 70px 0 80px;
+            background: #fff;
+        }
+
+        .privacy-layout {
+            display: grid;
+            grid-template-columns: 260px 1fr;
+            gap: 50px;
+            align-items: start;
+        }
+
+        /* Sticky Table of Contents */
+        .toc-sidebar {
+            position: sticky;
+            top: 30px;
+        }
+
+        .toc-box {
+            background: #f8f8f8;
+            border-left: 4px solid #fe0000;
+            padding: 28px 24px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .toc-box h3 {
+            font-family: 'Urbanist', sans-serif;
+             font-size: 16px;
+            font-weight: 800;
+            color: #000;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 18px;
+        }
+
+        .toc-box ol {
+            margin: 0;
+            padding: 0 0 0 18px;
+        }
+
+        .toc-box ol li {
+            margin-bottom: 10px;
+        }
+
+        .toc-box ol li a {
+            color: #444;
+            text-decoration: none;
+             font-size: 15px;
+            font-weight: 500;
+            line-height: 1.4;
+            transition: color 0.2s;
+        }
+
+        .toc-box ol li a:hover {
+            color: #fe0000;
+        }
+
+        /* Main policy text */
+        .policy-body h2 {
+            font-family: 'Urbanist', sans-serif;
+            font-size: 22px;
+            font-weight: 800;
+            color: #000;
+            margin: 44px 0 14px;
+            padding-top: 10px;
+        }
+
+        .policy-body h2:first-child {
+            margin-top: 0;
+        }
+
+        .policy-body h2 .section-num {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            background: #fe0000;
+            color: #fff;
+            border-radius: 50%;
+             font-size: 16px;
+            font-weight: 700;
+            margin-right: 10px;
+            flex-shrink: 0;
+            vertical-align: middle;
+            position: relative;
+            top: -2px;
+        }
+
+        .policy-body p {
+            color: #3a3a3a;
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 16px;
+        }
+
+        .policy-body ul {
+            padding-left: 0;
+            margin-bottom: 18px;
+            list-style: none;
+        }
+
+        .policy-body ul li {
+            position: relative;
+            padding-left: 22px;
+            color: #3a3a3a;
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 8px;
+        }
+
+        .policy-body ul li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 11px;
+            width: 8px;
+            height: 2px;
+            background: #fe0000;
+        }
+
+        .policy-body strong {
+            color: #000;
+            font-weight: 600;
+        }
+
+        .policy-body .subsection {
+            background: #fafafa;
+            border-radius: 8px;
+            padding: 20px 24px;
+            margin-bottom: 16px;
+        }
+
+        .policy-body .subsection strong {
+            display: block;
+            margin-bottom: 8px;
+             font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #000;
+        }
+
+        /* Contact box at the bottom */
+        .contact-box {
+            background: #000;
+            color: #fff;
+            border-radius: 12px;
+            padding: 32px 36px;
+            margin-top: 48px;
+        }
+
+        .contact-box h3 {
+            font-family: 'Urbanist', sans-serif;
+            font-size: 20px;
+            font-weight: 800;
+            margin-bottom: 14px;
+        }
+
+        .contact-box p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 16px;
+            margin-bottom: 6px;
+        }
+
+        .contact-box a {
+            color: #fe0000;
+            text-decoration: none;
+        }
+
+        .contact-box a:hover {
+            text-decoration: underline;
+        }
+
+        /* Divider */
+        .policy-divider {
+            border: none;
+            border-top: 1px solid #efefef;
+            margin: 10px 0 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 991px) {
+            .privacy-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .toc-sidebar {
+                position: static;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-top">
+            <div class="container">
+                Transform your life with science-backed fitness! Join thousands of
+                women over 40 who have achieved lasting results.
+                <a href="start-here.html">Get Started Today!</a>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="bg">
+                    <div class="row align-items-center">
+                        <!-- Logo -->
+                        <div class="col-md-3 site-brand">
+                            <a href="index.html">
+                                <img src="images/logo-1.png" alt="Logo" />
+                            </a>
+
+                            <!--New add  MOBILE MENU ICON  -->
+                            <div class="menu-toggle" id="menuToggle">
+                                ☰
+                            </div>
+
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="col-md-9 header-menu">
+                            <ul class="main-menu">
+                                <li><a href="index.html">Home</a></li>
+
+                                <li class="has-dropdown">
+                                    <a href="#">Services</a>
+                                    <ul class="dropdown">
+                                        <li><a href="perfect-scale.html">The Perfect Scale</a></li>
+                                        <li><a href="align.html">Align Weight Loss</a></li>
+                                        <li><a href="weight-loss.html">CT Medical Weight Loss and Beyond</a></li>
+                                        <li><a href="massi.html">Massi Protein </a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="about-us.html" class="active">About Us</a></li>
+                                <li><a href="podcast.html"> Podcast</a></li>
+                                <li><a href="faq.html">FAQ</a></li>
+                                <li><a href="contact-us.html">Contact</a></li>
+                                <li><a href="#">Login</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="breadcrumb-nav">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <span class="current">Privacy Policy</span>
+            </div>
+            <h1>Privacy <span>Policy</span></h1>
+            <p class="updated-date">Last updated: January 1, 2026</p>
+        </div>
+    </section>
+    <!-- Page Hero End -->
+
+    <!-- Privacy Policy Content -->
+    <section class="privacy-content-section">
+        <div class="container">
+            <div class="privacy-layout">
+
+                <!-- Table of Contents Sidebar -->
+                <aside class="toc-sidebar">
+                    <div class="toc-box">
+                        <h3>Contents</h3>
+                        <ol>
+                            <li><a href="#section-1">Information We Collect</a></li>
+                            <li><a href="#section-2">How We Use Your Information</a></li>
+                            <li><a href="#section-3">Disclosure of Your Information</a></li>
+                            <li><a href="#section-4">Security of Your Information</a></li>
+                            <li><a href="#section-5">Your Rights</a></li>
+                            <li><a href="#section-6">Third-Party Websites</a></li>
+                            <li><a href="#section-7">Children's Privacy</a></li>
+                            <li><a href="#section-8">Changes to This Policy</a></li>
+                            <li><a href="#section-9">Contact Us</a></li>
+                        </ol>
+                    </div>
+                </aside>
+
+                <!-- Policy Body -->
+                <div class="policy-body">
+
+                    <p>Welcome to The Fitness Professor ("we," "our," "us"). We are committed to protecting your privacy
+                        and ensuring the security of your personal information. This Privacy Policy explains how we
+                        collect, use, disclose, and safeguard your information when you visit our website, including any
+                        other media form, media channel, mobile website, or mobile application related or connected
+                        thereto (collectively, the "Site"). Please read this privacy policy carefully. If you do not
+                        agree with the terms of this privacy policy, please do not access the Site.</p>
+
+                    <hr class="policy-divider">
+
+                    <!-- Section 1 -->
+                    <h2 id="section-1"><span class="section-num">1</span> Information We Collect</h2>
+                    <p>We may collect information about you in a variety of ways. The information we may collect on the
+                        Site includes:</p>
+
+                    <div class="subsection">
+                        <strong>Personal Data</strong>
+                        <ul>
+                            <li>Personally identifiable information, such as your name, shipping address, email address,
+                                and telephone number, and demographic information, such as your age, gender, and
+                                hometown, that you voluntarily give to us when you register with the Site, sign up for
+                                our services, or contact us.</li>
+                            <li>Health-related information that you voluntarily provide, such as your medical history,
+                                weight, and health goals, to allow us to provide you with personalized services.</li>
+                        </ul>
+                    </div>
+
+                    <div class="subsection">
+                        <strong>Derivative Data</strong>
+                        <ul>
+                            <li>Information our servers automatically collect when you access the Site, such as your IP
+                                address, browser type, operating system, access times, and the pages you have viewed
+                                directly before and after accessing the Site.</li>
+                        </ul>
+                    </div>
+
+                    <div class="subsection">
+                        <strong>Financial Data</strong>
+                        <ul>
+                            <li>Financial information, such as data related to your payment method (e.g., valid credit
+                                card number, card brand, expiration date) that we may collect when you purchase, order,
+                                return, exchange, or request information about our services from the Site.</li>
+                        </ul>
+                    </div>
+
+                    <div class="subsection">
+                        <strong>Mobile Device Data</strong>
+                        <ul>
+                            <li>Device information, such as your mobile device ID, model, and manufacturer, and
+                                information about the location of your device if you access the Site from a mobile
+                                device.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Section 2 -->
+                    <h2 id="section-2"><span class="section-num">2</span> How We Use Your Information</h2>
+                    <p>We use the information we collect about you or that you provide to us, including any personal
+                        information:</p>
+                    <ul>
+                        <li>To provide, operate, and maintain our Site.</li>
+                        <li>To improve your experience on our Site and personalize the content and advertisements you
+                            see.</li>
+                        <li>To manage your account, including processing your orders and payments.</li>
+                        <li>To provide you with customer support and respond to your inquiries.</li>
+                        <li>To send you marketing and promotional communications if you have opted in to receive them.
+                        </li>
+                        <li>To analyze trends and usage to improve our Site.</li>
+                        <li>To comply with legal obligations, protect your safety, and enforce our policies.</li>
+                    </ul>
+
+                    <!-- Section 3 -->
+                    <h2 id="section-3"><span class="section-num">3</span> Disclosure of Your Information</h2>
+                    <p>We may share information we have collected about you in certain situations, including:</p>
+
+                    <div class="subsection">
+                        <strong>Service Providers</strong>
+                        <p style="margin:0; color:#3a3a3a; font-size:15px; line-height:1.8;">We may share your
+                            information with third-party service providers who perform services for us or on our behalf,
+                            such as payment processing, data analysis, email delivery, hosting services, customer
+                            service, and marketing assistance.</p>
+                    </div>
+
+                    <div class="subsection">
+                        <strong>Legal Obligations</strong>
+                        <p style="margin:0; color:#3a3a3a; font-size:15px; line-height:1.8;">We may disclose your
+                            information when required to do so by law or in response to valid requests by public
+                            authorities (e.g., a court or a government agency).</p>
+                    </div>
+
+                    <div class="subsection">
+                        <strong>Business Transfers</strong>
+                        <p style="margin:0; color:#3a3a3a; font-size:15px; line-height:1.8;">We may share or transfer
+                            your information in connection with, or during negotiations of, any merger, sale of company
+                            assets, financing, or acquisition of all or a portion of our business to another company.
+                        </p>
+                    </div>
+
+                    <!-- Section 4 -->
+                    <h2 id="section-4"><span class="section-num">4</span> Security of Your Information</h2>
+                    <p>We use administrative, technical, and physical security measures to help protect your personal
+                        information. While we have taken reasonable steps to secure the personal information you provide
+                        to us, please be aware that despite our efforts, no security measures are perfect or
+                        impenetrable, and no method of data transmission can be guaranteed against any interception or
+                        other type of misuse.</p>
+
+                    <!-- Section 5 -->
+                    <h2 id="section-5"><span class="section-num">5</span> Your Rights</h2>
+                    <p>Depending on your location, you may have the following rights regarding your personal
+                        information:</p>
+                    <ul>
+                        <li>The right to access the personal information we hold about you.</li>
+                        <li>The right to request that we correct any inaccuracies in your personal information.</li>
+                        <li>The right to request the deletion of your personal information.</li>
+                        <li>The right to object to the processing of your personal information.</li>
+                        <li>The right to withdraw consent where we have relied on your consent to process your personal
+                            information.</li>
+                    </ul>
+
+                    <!-- Section 6 -->
+                    <h2 id="section-6"><span class="section-num">6</span> Third-Party Websites</h2>
+                    <p>The Site may contain links to third-party websites and applications of interest, including
+                        advertisements and external services, that are not affiliated with us. Once you have used these
+                        links to leave the Site, any information you provide to these third parties is not covered by
+                        this Privacy Policy, and we cannot guarantee the safety and privacy of your information.</p>
+
+                    <!-- Section 7 -->
+                    <h2 id="section-7"><span class="section-num">7</span> Children's Privacy</h2>
+                    <p>Our Site is not intended for children under 13 years of age. We do not knowingly collect personal
+                        information from children under 13. If we learn we have collected or received personal
+                        information from a child under 13, we will delete that information.</p>
+
+                    <!-- Section 8 -->
+                    <h2 id="section-8"><span class="section-num">8</span> Changes to This Privacy Policy</h2>
+                    <p>We may update this Privacy Policy from time to time in order to reflect, for example, changes to
+                        our practices or for other operational, legal, or regulatory reasons. We will notify you of any
+                        changes by posting the new Privacy Policy on this page. You are advised to review this Privacy
+                        Policy periodically for any changes.</p>
+
+                    <!-- Section 9 / Contact -->
+                    <h2 id="section-9"><span class="section-num">9</span> Contact Us</h2>
+                    <p>If you have any questions or concerns about this Privacy Policy, please contact us:</p>
+
+                    <div class="contact-box">
+                        <h3>Get In Touch</h3>
+                        <p><strong style="color:#fff;">The Fitness Professor</strong></p>
+                        <p><i class="fas fa-envelope" style="color:#fe0000; margin-right:8px;"></i><a
+                                href="mailto:info@thefitnessprofessor.com">info@thefitnessprofessor.com</a></p>
+                        <p><i class="fas fa-globe" style="color:#fe0000; margin-right:8px;"></i><a
+                                href="contact-us.html">Contact Us Page</a></p>
+                    </div>
+
+                </div>
+                <!-- Policy Body End -->
+
+            </div>
+        </div>
+    </section>
+    <!-- Privacy Policy Content End -->
+
+    <!-- Footer -->
+    <footer class="site-footer-v2">
+        <!-- Background Text Overlay -->
+        <div class="footer-bg-text">
+            THE <br />
+            FITNESS <br />
+            PROFESSOR
+        </div>
+
+        <div class="container footer-content-v2">
+            <div class="row">
+                <!-- Column 1: Brand -->
+                <div class="col-lg-3 col-md-12 mb-5 mb-lg-0">
+                    <div class="site-brand">
+                        <a href="index.html"><img src="images/logo-1.png" alt="" /></a>
+                    </div>
+                    <p class="footer-desc">
+                        Look and feel better than you ever have with honest, straightforward fitness strategies from one
+                        of the top
+                        health experts.
+                    </p>
+                </div>
+
+                <!-- Column 2: Begin Your Journey -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h5>Services</h5>
+                    <ul class="footer-links-v2">
+                        <li><a href="perfect-scale.html">The Perfect Scale</a></li>
+                        <li><a href="#">Align Weight Loss</a></li>
+                        <li><a href="#">CT Medical Weight Loss and Beyond</a></li>
+                        <li><a href="#">Massi Protein</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Community -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h5>COMMUNITY</h5>
+                    <ul class="footer-links-v2">
+                        <li><a href="https://www.youtube.com/@tophealthco/podcasts">Youtube</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: About -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h5>DOUG DORSEY</h5>
+                    <ul class="footer-links-v2">
+                        <li><a href="about-us.html">About</a></li>
+                        <li><a href="#">Hire for Speaking</a></li>
+                        <li><a
+                                href="https://weightloss.ctmedweightloss.com/4keys-to-permanent-weight-loss">Resources</a>
+                        </li>
+                        <li><a href="https://go.appointmentcore.com/book/wBmPWa">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 5: Legal -->
+                <div class="col-lg-3 col-md-6">
+                    <h5>LEGAL INFORMATION</h5>
+                    <ul class="footer-links-v2">
+                        <li><a href="#">Disclaimer</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="privacy.policy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom-v2">
+            <div class="container container-bottom">
+                <div class="copy-text">
+                    Copyright © 2026 Advanced Integrative Health Alliance.
+                </div>
+                <a href="#" class="back-to-top" id="backToTop">
+                    <i class="fas fa-arrow-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const siteHeader = document.querySelector('header.site-header');
+        if (menuToggle) {
+            menuToggle.addEventListener('click', () => {
+                siteHeader.classList.toggle('active');
+            });
+        }
+
+        // Smooth scroll for TOC links
+        document.querySelectorAll('.toc-box a[href^="#"]').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offset = 30;
+                    const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+                    window.scrollTo({ top, behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Back to top
+        const backToTop = document.getElementById('backToTop');
+        if (backToTop) {
+            backToTop.addEventListener('click', (e) => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+
+        // Highlight active TOC item on scroll
+        const sections = document.querySelectorAll('.policy-body h2[id]');
+        const tocLinks = document.querySelectorAll('.toc-box a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                if (window.pageYOffset >= section.offsetTop - 80) {
+                    current = section.getAttribute('id');
+                }
+            });
+            tocLinks.forEach(link => {
+                link.style.color = '';
+                if (link.getAttribute('href') === '#' + current) {
+                    link.style.color = '#fe0000';
+                    link.style.fontWeight = '700';
+                } else {
+                    link.style.fontWeight = '500';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
