@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>The Fitness Professor - Home</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/weight.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+</head>
+
+
+<body class="home">
+
+      <!-- Css... -->
+  <style>
+    .menu-toggle {
+      display: none;
+    }
+
+    @media (max-width:768px) {
+
+      /* Logo left */
+      .site-brand {
+        display: flex;
+        align-items: center;
+      }
+
+      /* Menu toggle right */
+      .menu-toggle {
+        display: block;
+        margin-left: auto;
+        font-size: 32px;
+        margin-right: 10px;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      /* Mobile only */
+      @media (max-width: 991px) {
+
+        .header-menu {
+          display: none;
+          width: 100%;
+        }
+
+        header.site-header.active .header-menu {
+          display: block;
+        }
+
+        .main-menu {
+          flex-direction: column;
+          background: #000;
+        }
+      }
+    }
+  </style>
+  
+    <!-- Header -->
+  <header class="site-header">
+    <div class="header-top">
+      <div class="container">
+        Transform your life with science-backed fitness! Join thousands of
+        women over 40 who have achieved lasting results.
+        <a href="start-here.html">Get Started Today!</a>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container">
+        <div class="bg">
+          <div class="row align-items-center">
+            <!-- Logo -->
+            <div class="col-md-3 site-brand">
+              <a href="index.html">
+                <img src="images/logo-1.png" alt="Logo" />
+              </a>
+
+              <!--New add  MOBILE MENU ICON  -->
+              <div class="menu-toggle" id="menuToggle">
+                ☰
+              </div>
+
+            </div>
+
+            <!-- Menu -->
+            <div class="col-md-9 header-menu">
+              <ul class="main-menu">
+                <li><a href="index.html">Home</a></li>
+
+                <li class="has-dropdown">
+                  <a href="#">Services</a>
+                  <ul class="dropdown">
+                    <li><a href="perfect-scale.html">The Perfect Scale</a></li>
+                    <li><a href="align.html">Align Weight Loss</a></li>
+                    <li><a href="weight-loss.html">CT Medical Weight Loss and Beyond</a></li>
+                    <li><a href="massi.html">Massi Protein </a></li>
+                  </ul>
+                </li>
+
+                <li><a href="about-us.html" class="active">About Us</a></li>
+                <li><a href="podcast.html"> Podcast</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact-us.html">Contact</a></li>
+                <li><a href="#">Login</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+    <!-- Header -->
+
+
+    <!-- Enhanced Home Banner -->
+    <section class="home-banner-v2 massi-hero-section">
+        <div class="banner-overlay-v3"></div>
+
+        <!-- Top Navigation -->
+        <header class="hero-nav-v2" style="display: none">
+            <div class="container container-hero">
+                <div class="hero-nav-wrapper">
+                    <div class="hero-logo">
+                        <a href="index.html">
+                            <img src="images/logo-1.png" alt="Logo" />
+                        </a>
+                    </div>
+                    <nav class="hero-menu-v2">
+                        <ul class="main-menu">
+                            <li class="has-dropdown">
+                                <a href="index.html">Home</a>
+                                <ul class="dropdown">
+                                    <li><a href="index-2.html">Home 2</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown">
+                                <a href="#">Services</a>
+                                <ul class="dropdown">
+                                    <li><a href="#">Align</a></li>
+                                    <li><a href="perfect-scale.html">Perfect Scale</a></li>
+                                    <li><a href="#">CT Medical Weight Loss</a></li>
+                                    <li><a href="massi.html">Massi</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="about-us.html">About Us</a></li>
+                            <li>
+                                <a href="podcast.html" class="active">Podcast / Book</a>
+                            </li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="contact-us.html">Contact</a></li>
+                            <li><a href="#">Login</a></li>
+                        </ul>
+                    </nav>
+                    <div class="hero-cta-nav">
+                        <a href="#" class="btn-model-nation">MODEL NATION</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="container hero-center-container ">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="hero-content-v3">
+                        <div class="hero-yellow-headline">One Scoop. Full-Body Support.</div>
+                        <h1 class="hero-title-v3">
+                            Clinically Proven Weight <br> Loss—Designed Just for You
+                        </h1>
+                        <p class="hero-desc-v3">
+                            Our board-certified team builds your plan from the inside out—starting with a full-body
+                            medical evaluation and ending with real, sustainable results.
+                        </p>
+
+                        <div class="hero-btn-v3">
+                            <a href="#" class="btn-primary">Learn more about CT Medical Weight Loss and Beyond</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="health-goals-v2">
+        <div class="container">
+            <div class="section-header-v2" style="margin-bottom: 50px">
+
+                <h2>What You’ll Experience at CT Medical
+                </h2>
+
+            </div>
+            <div class="goals-grid">
+                <!-- Exercise Goal -->
+                <div class="goal-card">
+                    <div class="goal-top-label">
+                        <span>Step 1: Medical Consultation & Evaluation</span>
+                    </div>
+                    <div class="goal-image-box">
+                        <img src="images/s1.webp" alt="Exercise" />
+                        <div class="goal-overlay">
+                            <div class="brush-text"></div>
+                            <div class="goal-content">
+
+                                <p>
+                                    We start with a full-body medical assessment tailored to you — including labs,
+                                    vitals, and diagnostic testing. From hormones to lifestyle habits, we uncover the
+                                    real root of your weight challenges.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="goal-card">
+                    <div class="goal-top-label">
+                        <span>Step 2: Personalized Plan & Treatment Start</span>
+                    </div>
+                    <div class="goal-image-box">
+                        <img src="images/s2.webp" alt="Exercise" />
+                        <div class="goal-overlay">
+                            <div class="brush-text"></div>
+                            <div class="goal-content">
+
+                                <p>
+                                    Next, we create a custom treatment plan thst includes nutrition, exercise, and
+                                    FDA-approved prescriptions when appropriate. Everything is designed to fit your life
+                                    and goals.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sleep Goal -->
+                <div class="goal-card">
+                    <div class="goal-top-label">
+                        <span>Step 3: Weekly Coaching & Adjustments</span>
+                    </div>
+                    <div class="goal-image-box">
+                        <img src="images/s3.webp" alt="Exercise" />
+                        <div class="goal-overlay">
+                            <div class="brush-text"></div>
+                            <div class="goal-content">
+
+                                <p>
+                                    You’ll never feel lost or alone. With ongoing coaching, check-ins, and support, we
+                                    keep your momentum going — adjusting your plan as needed so progress feels natural,
+                                    not forced.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="perfect">
+        <div class="container">
+
+            <h2>Who This Program Is Perfect For</h2>
+            <p>
+                Whether you’ve tried everything or are just getting started, we build your plan based on real medical
+                data—not trends
+
+            </p>
+            <ul>
+                <li>You’re a woman over 40 who's noticed that weight loss feels harder than ever.</li>
+                <li>You’re navigating perimenopause or menopause and struggling with hormonal changes.</li>
+                <li>You’ve tried diets, but the weight always comes back.</li>
+                <li>You want to lose weight without extreme workouts or starvation.</li>
+                <li>You’re ready to lose weight in a healthy, medically guided way.</li>
+                <li>You’re looking for long-term success—not another quick fix.</li>
+                <li>You want expert support, but also flexibility that fits your life.</li>
+                <li>You want to feel more confident, energized, and in control.</li>
+                <li>You’re serious about results—but need support to get there.</li>
+            </ul>
+
+        </div>
+    </section>
+
+    <section class="health-goals-v2">
+        <div class="container">
+            <div class="section-header-v2" style="margin-bottom: 50px">
+
+                <h2>Beyond Weight Loss: Full-Body Support for Total Wellness
+                </h2>
+                <p>Your transformation isn’t just about the scale — we support your energy, recovery, and habits with
+                    real, science-backed tools.</p>
+
+            </div>
+            <div class="goals-grid">
+                <!-- Exercise Goal -->
+                <div class="goal-card">
+                    <div class="goal-image-box">
+                        <img src="images/s1.webp" alt="Exercise" />
+                        <div class="goal-overlay">
+                            <div class="brush-text"></div>
+                            <div class="goal-content">
+                                <h3>T-Shape 2 Body Contouring</h3>
+
+                                <p>
+                                    T-Shape2 smooths cellulite, reduces stubborn fat, and firms your skin—without
+                                    surgery, needles, or recovery time. Designed for comfort, each treatment helps you
+                                    feel more confident in every area you choose to treat.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="goal-card">
+                    <div class="goal-image-box">
+                        <img src="images/s1.webp" alt="Exercise" />
+                        <div class="goal-overlay">
+                            <div class="brush-text"></div>
+                            <div class="goal-content">
+                                <h3>TruFlex + TruSculpt</h3>
+
+                                <p>
+                                    Our non-invasive body contouring treatments tone muscle and melt fat fast. truFlex®
+                                    delivers the power of 54,000 crunches in one session to strengthen and define, while
+                                    truSculpt® targets stubborn fat, reducing up to 24% in key areas.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sleep Goal -->
+                <div class="goal-card">
+                    <div class="goal-image-box">
+                        <img src="images/s1.webp" alt="Exercise" />
+                        <div class="goal-overlay">
+                            <div class="brush-text"></div>
+                            <div class="goal-content">
+                                <h3>Red Light Therapy</h3>
+
+                                <p>
+                                    Red Light Therapy uses low-level light to reduce inflammation, speed up recovery,
+                                    improve skin tone, and support fat metabolism. It’s completely non-invasive,
+                                    pain-free, and perfect for boosting results before or after workouts.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="goal-card">
+                    <div class="goal-image-box">
+                        <img src="images/s1.webp" alt="Exercise" />
+                        <div class="goal-overlay">
+                            <div class="brush-text"></div>
+                            <div class="goal-content">
+                                <h3>IV Therapy</h3>
+
+                                <p>
+                                    Infuse your body with essential vitamins, minerals, and hydration—delivered directly
+                                    into your bloodstream for fast, effective results. Whether you’re feeling run-down,
+                                    recovering from illness, or optimizing for fat loss, there’s a custom drip for you.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="goal-card">
+                    <div class="goal-image-box">
+                        <img src="images/s1.webp" alt="Exercise" />
+                        <div class="goal-overlay">
+                            <div class="brush-text"></div>
+                            <div class="goal-content">
+                                <h3>Supplements</h3>
+
+                                <p>
+                                    We partner with Thorne® to offer professional-grade supplements that support
+                                    metabolism, hormone balance, energy, and overall wellness. Every formula is
+                                    third-party tested, physician-recommended, and tailored to your body’s unique needs.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="goal-card">
+                    <div class="goal-image-box">
+                        <img src="images/s1.webp" alt="Exercise" />
+                        <div class="goal-overlay">
+                            <div class="brush-text"></div>
+                            <div class="goal-content">
+                                <h3>Nutrition + Exercise</h3>
+
+                                <p>
+                                    Our expert-designed nutrition and exercise programs are built specifically for your
+                                    age, goals, and schedule. Whether you're easing back into movement or need
+                                    structured meal support, we help you build strong habits without burnout, extremes,
+                                    or guesswork
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="after-before">
+        <div class="container">
+            <div class="section-header-v2" style="margin-bottom: 50px">
+                <h2>See What’s Possible When You’re Finally Supported the Right Way</h2>
+                <p>These patients didn’t just lose weight—they gained confidence, energy, and a whole new lifestyle. All
+                    with medical guidance that finally made it possible.</p>
+            </div>
+            <div class="before-after-grid">
+                <div class="before-after-card">
+                    <img src="images/ab1.webp" alt="Before Image" class="before-image" />
+
+                </div>
+                <div class="before-after-card">
+                    <img src="images/ab2.webp" alt="Before Image" class="before-image" />
+
+                </div>
+                <div class="before-after-card">
+                    <img src="images/ab3.webp" alt="Before Image" class="before-image" />
+
+                </div>
+                <div class="before-after-card">
+                    <img src="images/ab4.webp" alt="Before Image" class="before-image" />
+
+                </div>
+                <div class="before-after-card">
+                    <img src="images/ab5.webp" alt="Before Image" class="before-image" />
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="client-reviews">
+        <div class="container">
+
+            <h3>Hear From Women Who Finally Got Results That Last.</h3>
+            <p>Doug’s methods have helped thousands of women over 40 lose fat, feel strong, and stay consistent —
+                without
+                burning out.
+            </p>
+
+            <div class="owl-carousel reviews-slide home-slide">
+
+                <div class="item">
+                    <div class="slide-content">
+                        <div class="quote-icon"><i class="fa fa-quote-left" aria-hidden="true"></i></div>
+                        <p>
+                            Excellence is the norm at this facility, and what truly stood out for me was the comprehensive approach to my well-being. From medical expertise to personalized ←trition and exercise guidance, it's a commitment to total health.
+                        </p>
+                        <div class="rating-box">
+                            <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                        </div>
+                        <div class="auther-name">
+                            Nancy R.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="slide-content">
+                        <div class="quote-icon"><i class="fa fa-quote-left" aria-hidden="true"></i></div>
+                        <p>
+                            The care I received here was exceptional, encompassing not only medical expertise but also detailed guidance on nutrition and exercise. It's a holistic approach that sets this place apart." The other places I consuulted didn't have the whole picture.
+                        </p>
+                        <div class="rating-box">
+                            <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                        </div>
+                        <div class="auther-name">
+                           Jean S.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="slide-content">
+                        <div class="quote-icon"><i class="fa fa-quote-left" aria-hidden="true"></i></div>
+                        <p>
+                            Transferring to this facility was a game-changer for my weight loss journey. From the moment I stepped in, it was evident that I made the right decision - a seamless transition, superior care, and a leve → expertise in healthy weight loss that I wisn I had found sooner.
+                        </p>
+                        <div class="rating-box">
+                            <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                        </div>
+                        <div class="auther-name">
+                            Sue W.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="slide-content">
+                        <div class="quote-icon"><i class="fa fa-quote-left" aria-hidden="true"></i></div>
+                        <p>
+                            I'm grateful for the personalized care I received on my weight loss journey. The medical expertise combined with genuine compassion made all the difference." I recommend this place to anyone wanting an amazing weight loss experience.
+                        </p>
+                        <div class="rating-box">
+                            <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                        </div>
+                        <div class="auther-name">
+                          Ron F. <br>
+                           Patient
+                        </div>
+                    </div>
+                </div>
+
+                <!-- duplicate slide to keep structure unchanged -->
+
+                <div class="item">
+                    <div class="slide-content">
+                        <div class="quote-icon"><i class="fa fa-quote-left" aria-hidden="true"></i></div>
+                        <p>More than a clinic, this place became my partner in wellness. The state-of-the-art facility, coupled with a caring team, provided not just weight loss support but also invaluable expertise in nutrition and exercise for a truly transformative experience.
+                        </p>
+                        <div class="rating-box">
+                            <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                        </div>
+                        <div class="auther-name">
+                           J.T.<br>
+                           Patient
+                        </div>
+                    </div>
+                </div>
+
+                     <div class="item">
+                    <div class="slide-content">
+                        <div class="quote-icon"><i class="fa fa-quote-left" aria-hidden="true"></i></div>
+                        <p>Choosing a medically supervised weight loss program was the best decision. The tailored approach to my needs ensured a transformative experience with a focus on my overall well-being. Down 50lbs!
+                        </p>
+                        <div class="rating-box">
+                            <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                        </div>
+                        <div class="auther-name">
+                          Μ.Τ.<br>
+                           Patient
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+  <footer class="site-footer-v2">
+    <!-- Background Text Overlay -->
+    <div class="footer-bg-text">
+      THE <br />
+      FITNESS <br />
+      PROFESSOR
+    </div>
+
+    <div class="container footer-content-v2">
+      <div class="row">
+        <!-- Column 1: Brand -->
+        <div class="col-lg-3 col-md-12 mb-5 mb-lg-0">
+          <div class="site-brand">
+            <a href="index.html"><img src="images/logo-1.png" alt="" /></a>
+          </div>
+          <p class="footer-desc">
+          Look and feel better than you ever have with honest, straightforward fitness strategies from one of the top health experts.
+          </p>
+        </div>
+
+        <!-- Column 2: Begin Your Journey -->
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <h5>Services</h5>
+          <ul class="footer-links-v2">
+            <li><a href="perfect-scale.html">The Perfect Scale</a></li>
+            <li><a href="#">Align Weight Loss</a></li>
+            <li><a href="#">CT Medical Weight Loss and Beyond</a></li>
+            <li><a href="#">Massi Protein</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Community -->
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <h5>COMMUNITY</h5>
+          <ul class="footer-links-v2">
+            <li><a href="https://www.youtube.com/@tophealthco/podcasts">Youtube</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: About -->
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <h5>DOUG DORSEY</h5>
+          <ul class="footer-links-v2">
+            <li><a href="about-us.html">About</a></li>
+            <li><a href="#">Hire for Speaking</a></li>
+            <li><a href="https://weightloss.ctmedweightloss.com/4keys-to-permanent-weight-loss">Resources</a></li>
+            <li><a href="https://go.appointmentcore.com/book/wBmPWa">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 5: Legal -->
+        <div class="col-lg-3 col-md-6">
+          <h5>LEGAL INFORMATION</h5>
+          <ul class="footer-links-v2">
+            <li><a href="#">Disclaimer</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="privacy.policy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom-v2">
+      <div class="container container-bottom">
+        <div class="copy-text">
+          Copyright © 2026 Advanced Integrative Health Alliance.
+        </div>
+          <a href="#" class="back-to-top" id="backToTop">
+            <i class="fas fa-arrow-up"></i>
+          </a>
+      </div>
+    </div>
+  </footer>
+    <!-- Footer End -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        // Number Animation
+        function animateValue(element, start, end, duration) {
+            let startTimestamp = null;
+            const step = (timestamp) => {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                const current = Math.floor(progress * (end - start) + start);
+                element.textContent = current;
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                }
+            };
+            window.requestAnimationFrame(step);
+        }
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.5,
+            rootMargin: "0px",
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    const target = entry.target;
+                    const finalValue = parseInt(target.getAttribute("data-target"));
+
+                    if (!target.classList.contains("animated")) {
+                        target.classList.add("animated");
+                        animateValue(target, 0, finalValue, 2000);
+                    }
+                }
+            });
+        }, observerOptions);
+
+        // Observe all stat numbers
+        document.querySelectorAll(".stat-number").forEach((el) => {
+            observer.observe(el);
+        });
+
+        // Smooth scroll
+        document
+            .querySelector(".scroll-indicator")
+            ?.addEventListener("click", function () {
+                window.scrollTo({
+                    top: window.innerHeight,
+                    behavior: "smooth",
+                });
+            });
+
+        // Testimonials Carousel
+        $(".reviews-slide").owlCarousel({
+            nav: false,
+            center: true,
+            dots: true,
+            loop: true,
+            margin: 30,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                768: {
+                    items: 2,
+                },
+                1200: {
+                    items: 3,
+                },
+            },
+        });
+    </script>
+
+    <!-- Header script -->
+   <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var toggle = document.getElementById("menuToggle");
+      var header = document.querySelector(".site-header");
+
+      if (toggle && header) {
+        toggle.addEventListener("click", function () {
+          header.classList.toggle("active");
+        });
+      }
+    });
+  </script>
+
+  <!-- Back to top btn  -->
+
+<script>
+  const backToTop = document.getElementById("backToTop");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+      backToTop.classList.add("show");
+    } else {
+      backToTop.classList.remove("show");
+    }
+  });
+</script>
+</body>
+
+</html>

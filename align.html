@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Align Weight Loss</title>
+  <link rel="stylesheet" href="css/custom.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+  <!-- Css... -->
+  <style>
+    .menu-toggle {
+      display: none;
+    }
+
+    @media (max-width:768px) {
+
+      /* Logo left */
+      .site-brand {
+        display: flex;
+        align-items: center;
+      }
+
+      /* Menu toggle right */
+      .menu-toggle {
+        display: block;
+        margin-left: auto;
+        font-size: 32px;
+        margin-right: 10px;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      /* Mobile only */
+      @media (max-width: 991px) {
+
+        .header-menu {
+          display: none;
+          width: 100%;
+        }
+
+        header.site-header.active .header-menu {
+          display: block;
+        }
+
+        .main-menu {
+          flex-direction: column;
+          background: #000;
+        }
+      }
+    }
+
+    .banner-overlay-v3 {
+      background: none;
+    }
+
+    .home-banner-v2 {
+      display: none;
+    }
+
+    .hero-section {
+      padding: 50px 0px;
+      background: url('https://agiledigitaledge.dev/the-fitness-professor-demo-home/the-fitness-professor/images/assets/bg.webp') center right / cover no-repeat;
+      position: relative;
+      color: #fff;
+    }
+
+    .hero-section .hero-overlay {
+      padding-bottom: 80px;
+    }
+
+    .hero-section .logo img {
+      width: 300px;
+      height: 300px;
+    }
+
+    .hero-section .hero-content h1 {
+      font-size: 80px;
+      font-weight: 800;
+      line-height: 90px;
+      margin-bottom: 20px;
+    }
+
+    .hero-section .hero-content p {
+      font-size: 26px;
+      font-weight: 600;
+    }
+
+    .hero-content p span {
+      color: #f2c94c;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+
+      .home-banner-v2 {
+        display: none;
+      }
+
+      .hero-section {
+        padding: 0px;
+        background-size: cover;
+        background-position: center;
+      }
+
+      .hero-section .hero-content h1 {
+        font-size: 32px;
+        line-height: 45px;
+      }
+
+      .hero-section .logo img {
+        text-align: center;
+        width: 200px;
+        height: 200px;
+      }
+
+      .hero-section .hero-content p {
+        padding-bottom: 40px;
+        font-size: 16px;
+      }
+
+      .hero-section .hero-overlay {
+        padding-bottom: 0px !important;
+      }
+    }
+
+
+    .align-different {
+      padding: 80px 0;
+      background: #fff;
+    }
+
+    .align-different .row {
+      align-items: center;
+    }
+
+    /* Image */
+    .align-different .align-image {
+      overflow: hidden;
+      border-radius: 14px;
+    }
+
+    .align-different .align-image img {
+      width: 100%;
+      border-radius: 14px;
+      transition: transform 0.6s ease, box-shadow 0.6s ease;
+    }
+
+    .align-different .align-image:hover img {
+      transform: scale(1.06);
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
+    }
+
+    .align-different .align-content h2 {
+      font-size: 48px;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+
+    .align-different .align-content .intro {
+      font-size: 18px;
+    }
+
+    .align-different .feature {
+      background: #fff;
+      padding: 22px 20px 22px 30px;
+      border-radius: 12px;
+      margin-bottom: 28px;
+      position: relative;
+      transition: all 0.35s ease;
+    }
+
+    .align-different .feature:first-child {
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    }
+
+    .align-different .feature:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 55px rgba(0, 0, 0, 0.18);
+    }
+
+    .align-different .feature h4 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .align-different .feature h4 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    /* Font Awesome icon */
+    .align-different .feature h4 i {
+      color: #0c5c5a;
+      font-size: 20px;
+      margin-top: 2px;
+      /* text alignment fix */
+      min-width: 20px;
+    }
+
+    .align-different .feature p {
+      font-size: 18px;
+      color: #444;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      .align-different {
+        padding: 50px 0px 16px 0px;
+      }
+
+      .align-different .align-content h2 {
+        font-size: 26px;
+        font-weight: 700;
+      }
+    }
+
+
+    /* Is ALIGN Right section */
+
+    .align-right {
+      padding: 90px 0;
+      background: #f7f7f7;
+    }
+
+    /* Card */
+    .align-right .align-card {
+      background: #fff;
+      max-width: 989px;
+      margin: auto;
+      padding: 70px 70px;
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+      /* text-align: center; */
+    }
+
+    /* Heading */
+    .align-right .align-card h2 {
+      font-size: 60px;
+      font-weight: 900;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+
+    /* Divider */
+    .align-right .divider {
+      width: 140px;
+      height: 3px;
+      background: #0c5c5a;
+      margin: 0 auto 35px;
+    }
+
+    /* Intro */
+    .align-right .align-card .intro {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0 auto 25px;
+      text-align: center;
+    }
+
+    .align-right .align-card .sub {
+      font-size: 24px;
+      font-weight: 500;
+      margin-bottom: 35px;
+    }
+
+    /* Checklist */
+    .align-right .checklist {
+      list-style: none;
+      padding: 0px 10px;
+      margin: 0 auto 35px;
+      text-align: left;
+      color: black;
+    }
+
+    .align-right .checklist li {
+      position: relative;
+      padding-left: 40px;
+      margin-bottom: 18px;
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    .align-right .checklist li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      top: 2px;
+      width: 26px;
+      height: 26px;
+      background: #0c5c5a;
+      color: #fff;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 26px;
+      font-size: 14px;
+    }
+
+    /* Note */
+    .align-right .note {
+      font-size: 20px;
+      margin: 0px auto 50px;
+    }
+
+    .align-right .note span {
+      color: #ff4d00;
+      font-weight: 700;
+    }
+
+    /* Big count */
+    .align-right h3 {
+      font-size: 44px;
+      font-weight: 800;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .align-right h3 span {
+      color: #e5c23a;
+      font-style: italic;
+    }
+
+    .ready-btn {
+      width: 100%;
+      text-align: center;
+    }
+
+    .align-right .ready-btn .cta-btn {
+      display: inline-block;
+      background: #0c5c5a;
+      color: #fff;
+      padding: 18px 50px;
+      border-radius: 60px;
+      font-size: 18px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .align-right .cta-btn:hover {
+      background: #094846;
+      transform: translateY(-4px);
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .align-right .align-card {
+        padding: 40px 20px;
+      }
+
+      .align-right {
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+
+      .align-right .align-card h2 {
+        font-size: 26px;
+      }
+
+      .align-right .align-card .intro {
+        font-size: 16px;
+      }
+
+      .align-right .align-card .sub {
+        font-size: 16px;
+      }
+
+      .align-right .checklist li {
+        font-size: 16px;
+        padding-left: 15px;
+      }
+
+      .align-right .checklist li::before {
+        color: white;
+        left: -20px;
+        font-size: 12px;
+        padding-left: 2px;
+      }
+
+      .align-right .note {
+        font-size: 16px;
+      }
+
+      .align-right h3 {
+        font-size: 24px;
+      }
+
+      .align-right .ready-btn .cta-btn {
+        font-size: 14px;
+        padding: 10px 15px;
+      }
+    }
+
+
+    /* Succes Section */
+
+    .success-stories {
+      padding: 40px 0;
+      background: #fff;
+    }
+
+    /* Heading */
+    .success-stories h2 {
+      font-size: 60px;
+      font-weight: 900;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+
+    .success-stories .subtitle {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 60px;
+    }
+
+    /* Story item */
+    .success-stories .story-item {
+      overflow: hidden;
+      text-align: center;
+      margin-bottom: 60px;
+      position: relative;
+
+    }
+
+
+    .success-stories .story-item::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 22%;
+      /* jitna face area blur karna ho */
+      backdrop-filter: blur(9px);
+      -webkit-backdrop-filter: blur(12px);
+      background: rgba(255, 255, 255, 0.1);
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .success-stories .story-item img {
+      width: 100%;
+      transition: transform 0.6s ease, filter 0.6s ease;
+    }
+
+    .success-stories .story-item:hover img {
+      transform: scale(1.08);
+      filter: brightness(1.05);
+    }
+
+    /* Text */
+    .success-stories .story-item p {
+      padding-top: 20px;
+      font-size: 17px;
+      font-weight: 600;
+      line-height: 1.6;
+      color: #111;
+      max-width: 90%;
+      margin: auto;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .success-stories {
+        padding-bottom: 0px;
+      }
+
+      .success-stories h2 {
+        font-size: 26px;
+      }
+
+      .success-stories .subtitle {
+        font-size: 16px;
+        margin-bottom: 40px;
+      }
+
+      .success-stories .story-item {
+        margin-bottom: 40px;
+      }
+    }
+
+
+    .final-cta {
+      padding: 50px 0;
+      background: #fff;
+      margin-bottom: 50px;
+    }
+
+    /* Box */
+    .final-cta .cta-box {
+      max-width: 1000px;
+      margin: auto;
+      padding: 70px 40px 90px;
+      border: 3px solid #c9d3dd;
+      border-radius: 22px;
+      text-align: center;
+      position: relative;
+    }
+
+    /* Heading */
+    .final-cta .cta-box h2 {
+      font-size: 61px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: #000;
+    }
+
+    /* Text */
+    .final-cta .cta-box p {
+      font-size: 25px;
+      max-width: 760px;
+      margin: 0 auto;
+      color: #222;
+    }
+
+    /* Button */
+    .final-cta .cta-btn {
+      position: absolute;
+      left: 50%;
+      bottom: -30px;
+      transform: translateX(-50%);
+      background: #0c5c5a;
+      color: #fff;
+      padding: 18px 100px;
+      border-radius: 60px;
+      font-size: 30px;
+      font-weight: 700;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: all 0.3s ease;
+    }
+
+    /* Hover */
+    .final-cta .cta-btn:hover {
+      background: #083f3d;
+      transform: translateX(-50%) translateY(-4px);
+      box-shadow: 0 14px 35px rgba(0, 0, 0, 0.25);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .final-cta {
+        padding-top: 0px;
+        padding-bottom: 10px;
+      }
+
+      .final-cta .cta-box {
+        padding: 45px 20px 80px;
+      }
+
+      .final-cta .cta-box h2 {
+        font-size: 26px;
+      }
+
+      .final-cta .cta-box h2 br {
+        display: none;
+      }
+
+      .final-cta .cta-box p {
+        font-size: 18px;
+      }
+
+      .final-cta .cta-btn {
+        font-size: 16px;
+        padding: 14px 15px;
+      }
+    }
+
+
+
+    /*  Footer    */
+
+
+    .site-footer {
+      background: #000;
+      padding: 40px 0;
+    }
+
+    /* Logo */
+    .site-footer .footer-logo img {
+      max-width: 300px;
+    }
+
+    /* Center text */
+    .site-footer .footer-center {
+      text-align: center;
+      color: #aaa;
+    }
+
+    .site-footer .footer-center .links {
+      margin-bottom: 6px;
+    }
+
+    .site-footer .footer-center a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .site-footer .footer-center a:hover {
+      text-decoration: underline;
+    }
+
+    .site-footer .footer-center .copyright {
+      font-size: 16px;
+      color: #888;
+    }
+
+    /* Social icons */
+    .site-footer .footer-social {
+      text-align: right;
+    }
+
+    .site-footer .footer-social a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      margin-left: 12px;
+      border-radius: 50%;
+      background: #1a1a1a;
+      color: #9aa3ad;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .site-footer .footer-social a:hover {
+      background: #0c5c5a;
+      color: #fff;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+
+      .site-footer .footer-logo,
+      .site-footer .footer-center,
+      .site-footer .footer-social {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .site-footer .footer-logo img {
+        max-width: 220px;
+      }
+
+      .site-footer .footer-social a {
+        text-decoration: none;
+        margin: 0 8px;
+      }
+    }
+
+    /* ALIGN Different – Mobile image at bottom */
+    @media (max-width: 767px) {
+
+      .align-different .row {
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* Image column */
+      .align-different .row>.col-md-6:first-child {
+        order: 2;
+      }
+
+      /* Content column */
+      .align-different .row>.col-md-6:last-child {
+        order: 1;
+      }
+
+    }
+  </style>
+
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-top">
+      <div class="container">
+        Transform your life with science-backed fitness! Join thousands of
+        women over 40 who have achieved lasting results.
+        <a href="start-here.html">Get Started Today!</a>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container">
+        <div class="bg">
+          <div class="row align-items-center">
+            <!-- Logo -->
+            <div class="col-md-3 site-brand">
+              <a href="index.html">
+                <img src="images/logo-1.png" alt="Logo" />
+              </a>
+
+              <!--New add  MOBILE MENU ICON  -->
+              <div class="menu-toggle" id="menuToggle">
+                ☰
+              </div>
+
+            </div>
+
+            <!-- Menu -->
+            <div class="col-md-9 header-menu">
+              <ul class="main-menu">
+                <li><a href="index.html">Home</a></li>
+
+                <li class="has-dropdown">
+                  <a href="#">Services</a>
+                  <ul class="dropdown">
+                    <li><a href="perfect-scale.html">The Perfect Scale</a></li>
+                    <li><a href="align.html">Align Weight Loss</a></li>
+                    <li><a href="weight-loss.html">CT Medical Weight Loss and Beyond</a></li>
+                    <li><a href="massi.html">Massi Protein </a></li>
+                  </ul>
+                </li>
+
+                <li><a href="about-us.html" class="active">About Us</a></li>
+                <li><a href="podcast.html"> Podcast</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact-us.html">Contact</a></li>
+                <li><a href="#">Login</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Header -->
+
+  <!-- Enhanced Home Banner -->
+  <section class="home-banner-v2">
+    <div class="banner-overlay-v3"></div>
+
+    <!-- Top Navigation -->
+    <header class="hero-nav-v2" style="display: none">
+      <div class="container container-hero">
+        <div class="hero-nav-wrapper">
+          <div class="hero-logo">
+            <a href="index.html">
+              <img src="images/logo-1.png" alt="Logo" />
+            </a>
+          </div>
+          <nav class="hero-menu-v2">
+            <ul class="main-menu">
+              <li class="has-dropdown">
+                <a href="index.html">Home</a>
+                <ul class="dropdown">
+                  <li><a href="index-2.html">Home 2</a></li>
+                </ul>
+              </li>
+              <li class="has-dropdown">
+                <a href="#">Services</a>
+                <ul class="dropdown">
+                  <li><a href="#">Align</a></li>
+                  <li><a href="perfect-scale.html">Perfect Scale</a></li>
+                  <li><a href="#">CT Medical Weight Loss</a></li>
+                  <li><a href="massi.html">Massi</a></li>
+                </ul>
+              </li>
+
+              <li><a href="about-us.html">About Us</a></li>
+              <li>
+                <a href="podcast.html" class="active">Podcast / Book</a>
+              </li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="contact-us.html">Contact</a></li>
+              <li><a href="#">Login</a></li>
+            </ul>
+          </nav>
+          <div class="hero-cta-nav">
+            <a href="#" class="btn-model-nation">MODEL NATION</a>
+          </div>
+        </div>
+      </div>
+    </header>
+  </section>
+
+  <!-- HERO SECTION -->
+  <section class="hero-section">
+    <div class="hero-overlay">
+      <div class="container">
+        <div class="row">
+          <!-- LEFT CONTENT -->
+          <div class="col-md-9">
+            <div class="hero-content">
+
+              <div class="logo">
+                <img
+                  src="https://agiledigitaledge.dev/the-fitness-professor-demo-home/the-fitness-professor/images/assets/align-logo.webp"
+                  alt="ALIGN">
+              </div>
+
+              <h1>
+                Real Weight Loss Support That <br> Works
+              </h1>
+
+              <p>Built for women who’ve tried everything and still feel stuck —
+                <span>without gimmicks or one-size-fits-all diets.</span>
+              </p>
+            </div>
+
+          </div>
+
+          <div class="col-md-3"></div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- WHAT MAKES ALIGN DIFFERENT -->
+
+  <section class="align-different">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6">
+          <div class="align-image">
+            <img
+              src="https://agiledigitaledge.dev/the-fitness-professor-demo-home/the-fitness-professor/images/assets/align-different.webp"
+              alt="ALIGN Support">
+          </div>
+        </div>
+
+        <!-- RIGHT CONTENT -->
+        <div class="col-md-6">
+          <div class="align-content">
+            <h2> What Makes ALIGN Different</h2>
+            <p class="intro">
+              Most weight loss programs give you a plan. ALIGN gives
+              you a full system — and real support.
+            </p>
+
+            <div class="row">
+              <div class=" col-md-6">
+                <div class="feature">
+                  <h4><i class="fa-solid fa-hand-holding-medical"></i> Doctor-supervised care</h4>
+                  <p>
+                    from providers who understand hormones, metabolism, and the female body over 40
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="feature">
+                  <h4><i class="fa-solid fa-folder-plus"></i>Prescription support (GLP-1s)</h4>
+                  <p>
+                    When appropriate — always personalized,
+                    never one-size-fits-all
+                  </p>
+                </div>
+              </div>
+
+
+              <div class=" col-md-6">
+                <div class="feature">
+                  <h4> <i class="fa-solid fa-laptop"></i> Real coaching & accountability</h4>
+                  <p>
+                    To help you stay consistent and build
+                    lasting habits
+                  </p>
+                </div>
+              </div>
+
+              <div class=" col-md-6">
+                <div class="feature">
+                  <h4><i class="fa-solid fa-calendar-plus"></i> Step-down strategy</h4>
+                  <p>
+                    To help you safely taper off medication
+                    and maintain results long term
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Is ALIGN Right  section -->
+
+
+  <section class="align-right">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+
+          <div class="align-card">
+
+            <h2>Is ALIGN Right for You?</h2>
+            <div class="divider"></div>
+
+            <p class="intro">
+              ALIGN is built for women who are done with the guesswork and ready for a
+              smarter, more sustainable way to lose weight.
+            </p>
+
+            <p class="sub">
+              This might be exactly what you’ve been looking for if:
+            </p>
+
+            <ul class="checklist">
+              <li>You’re over 40 and your body isn’t responding the way it used to</li>
+              <li>You’ve tried diets, apps, and prescriptions — but nothing sticks</li>
+              <li>You’re open to using medication if it’s right for you, but want more than just a pill
+              </li>
+              <li>You want a real plan, real coaching, and real support</li>
+              <li>You care about your health, not just the number on the scale</li>
+              <li>You’re ready to lose weight in a way that lasts — and actually fits your life</li>
+            </ul>
+
+            <p class="note">
+              ALIGN is <span>NOT</span> for you if you're looking for a quick fix or one-size-fits-all
+              solution.
+              This is a comprehensive program designed to support long-term change — the right way.
+            </p>
+
+            <h3>
+              <strong>1,200+</strong>
+              <span>Success Stories</span><br>
+              And Counting!
+            </h3>
+            <div class="ready-btn">
+              <a href="#" class="cta-btn">
+                Ready to See If ALIGN Is Right for You
+              </a>
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="featured-episode">
+    <div class="container">
+      <div class="section-header">
+        <div class="sub-title"> </div>
+        <h2> <span> </span></h2>
+      </div>
+      <iframe src="https://form.typeform.com/to/feYoTa8i" width="100%" height="600" style="border:0;">
+      </iframe>
+    </div>
+  </section>
+
+
+  <section class="success-stories">
+    <div class="container">
+
+      <!-- Heading -->
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2>SUCCESS STORIES</h2>
+          <p class="subtitle">Real Women. Real Results. Real Support.</p>
+        </div>
+      </div>
+
+      <!-- STORIES GRID -->
+      <div class="row">
+
+        <div class="col-md-4">
+          <div class="story-item">
+            <img
+              src="https://agiledigitaledge.dev/the-fitness-professor-demo-home/the-fitness-professor/images/assets/img-1.webp"
+              alt="">
+            <p>
+              I lost 12 pounds in 10 weeks and feel stronger every day.
+              The workouts are challenging but doable.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="story-item">
+            <img
+              src="https://agiledigitaledge.dev/the-fitness-professor-demo-home/the-fitness-professor/images/assets/img-2.webp"
+              alt="">
+            <p>
+              The sense of community and encouragement is incredible.
+              I’ve made friends and achieved fitness goals.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="story-item">
+            <img
+              src="https://agiledigitaledge.dev/the-fitness-professor-demo-home/the-fitness-professor/images/assets/img-3.webp"
+              alt="">
+            <p>
+              Not only did I lose weight, but my confidence and
+              mental health improved drastically.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="story-item">
+            <img
+              src="https://agiledigitaledge.dev/the-fitness-professor-demo-home/the-fitness-professor/images/assets/img-4.webp"
+              alt="">
+            <p>
+              The personalized coaching made all the difference.
+              I learned how to exercise safely and effectively.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="story-item">
+            <img
+              src="https://agiledigitaledge.dev/the-fitness-professor-demo-home/the-fitness-professor/images/assets/img-5.webp"
+              alt="">
+            <p>
+              Joining this community changed everything.
+              The support and motivation kept me consistent.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="story-item">
+            <img
+              src="https://agiledigitaledge.dev/the-fitness-professor-demo-home/the-fitness-professor/images/assets/img-6.webp"
+              alt="">
+            <p>
+              This program helped me finally break through my plateau.
+              I gained muscle, lost fat, and my energy levels.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="final-cta">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+
+          <div class="cta-box">
+            <h2>Ready to Start Your Journey<br>with ALIGN?</h2>
+
+            <p>
+              Join thousands of women transforming their health with real support,
+              not shortcuts.
+            </p>
+
+            <a href="#" class="cta-btn">
+              Explore ALIGN & See If It’s Right for You
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer-v2">
+    <!-- Background Text Overlay -->
+    <div class="footer-bg-text">
+      THE <br />
+      FITNESS <br />
+      PROFESSOR
+    </div>
+
+    <div class="container footer-content-v2">
+      <div class="row">
+        <!-- Column 1: Brand -->
+        <div class="col-lg-3 col-md-12 mb-5 mb-lg-0">
+          <div class="site-brand">
+            <a href="index.html"><img src="images/logo-1.png" alt="" /></a>
+          </div>
+          <p class="footer-desc">
+            Look and feel better than you ever have with honest, straightforward fitness strategies from one of the top
+            health experts.
+          </p>
+        </div>
+
+        <!-- Column 2: Begin Your Journey -->
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <h5>Services</h5>
+          <ul class="footer-links-v2">
+            <li><a href="perfect-scale.html">The Perfect Scale</a></li>
+            <li><a href="#">Align Weight Loss</a></li>
+            <li><a href="#">CT Medical Weight Loss and Beyond</a></li>
+            <li><a href="#">Massi Protein</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Community -->
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <h5>COMMUNITY</h5>
+          <ul class="footer-links-v2">
+            <li><a href="https://www.youtube.com/@tophealthco/podcasts">Youtube</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: About -->
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <h5>DOUG DORSEY</h5>
+          <ul class="footer-links-v2">
+            <li><a href="about-us.html">About</a></li>
+            <li><a href="#">Hire for Speaking</a></li>
+            <li><a href="https://weightloss.ctmedweightloss.com/4keys-to-permanent-weight-loss">Resources</a></li>
+            <li><a href="https://go.appointmentcore.com/book/wBmPWa">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 5: Legal -->
+        <div class="col-lg-3 col-md-6">
+          <h5>LEGAL INFORMATION</h5>
+          <ul class="footer-links-v2">
+            <li><a href="#">Disclaimer</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="privacy.policy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom-v2">
+      <div class="container container-bottom">
+        <div class="copy-text">
+          Copyright © 2026 Advanced Integrative Health Alliance.
+        </div>
+        <a href="#" class="back-to-top" id="backToTop">
+          <i class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer End -->
+
+
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var toggle = document.getElementById("menuToggle");
+      var header = document.querySelector(".site-header");
+
+      if (toggle && header) {
+        toggle.addEventListener("click", function () {
+          header.classList.toggle("active");
+        });
+      }
+    });
+  </script>
+
+  <!-- Back to top btn  -->
+
+  <script>
+    const backToTop = document.getElementById("backToTop");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 200) {
+        backToTop.classList.add("show");
+      } else {
+        backToTop.classList.remove("show");
+      }
+    });
+  </script>
+
+</body>
+
+</html>
