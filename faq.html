@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>FAQ - The Fitness Professor</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/faq.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+
+      <!-- Css... -->
+  <style>
+    .menu-toggle {
+      display: none;
+    }
+
+    @media (max-width:768px) {
+
+      /* Logo left */
+      .site-brand {
+        display: flex;
+        align-items: center;
+      }
+
+      /* Menu toggle right */
+      .menu-toggle {
+        display: block;
+        margin-left: auto;
+        font-size: 32px;
+        margin-right: 10px;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      /* Mobile only */
+      @media (max-width: 991px) {
+
+        .header-menu {
+          display: none;
+          width: 100%;
+        }
+
+        header.site-header.active .header-menu {
+          display: block;
+        }
+
+        .main-menu {
+          flex-direction: column;
+          background: #000;
+        }
+      }
+    }
+  </style>
+
+    <!-- Header -->
+  <header class="site-header">
+    <div class="header-top">
+      <div class="container">
+        Transform your life with science-backed fitness! Join thousands of
+        women over 40 who have achieved lasting results.
+        <a href="start-here.html">Get Started Today!</a>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container">
+        <div class="bg">
+          <div class="row align-items-center">
+            <!-- Logo -->
+            <div class="col-md-3 site-brand">
+              <a href="index.html">
+                <img src="images/logo-1.png" alt="Logo" />
+              </a>
+
+              <!--New add  MOBILE MENU ICON  -->
+              <div class="menu-toggle" id="menuToggle">
+                ☰
+              </div>
+
+            </div>
+
+            <!-- Menu -->
+            <div class="col-md-9 header-menu">
+              <ul class="main-menu">
+                <li><a href="index.html">Home</a></li>
+
+                <li class="has-dropdown">
+                  <a href="#">Services</a>
+                  <ul class="dropdown">
+                    <li><a href="perfect-scale.html">The Perfect Scale</a></li>
+                    <li><a href="align.html">Align Weight Loss</a></li>
+                    <li><a href="weight-loss.html">CT Medical Weight Loss and Beyond</a></li>
+                    <li><a href="massi.html">Massi Protein </a></li>
+                  </ul>
+                </li>
+
+                <li><a href="about-us.html" class="active">About Us</a></li>
+                <li><a href="podcast.html"> Podcast</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact-us.html">Contact</a></li>
+                <li><a href="#">Login</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+    <!-- Header -->
+
+    <!-- FAQ Hero Section -->
+    <section class="faq-hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="sub-title">Frequently Asked Questions</div>
+          <h1>Find Answers to <span>Your Questions</span></h1>
+          <p class="lead">
+            Everything you need to know about our programs, services, and how we
+            can help you achieve your fitness goals.
+          </p>
+
+          <!-- Search Box -->
+          <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input
+              type="text"
+              id="faqSearch"
+              placeholder="Search for answers..."
+              autocomplete="off"
+            />
+            <button
+              type="button"
+              class="search-clear"
+              id="searchClear"
+              style="display: none"
+            >
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <div id="searchResults" class="search-results"></div>
+        </div>
+      </div>
+    </section>
+    <!-- FAQ Hero Section End -->
+
+    <!-- FAQ Categories -->
+    <section class="faq-categories">
+      <div class="container">
+        <div class="category-tabs">
+          <button class="category-tab active" data-category="all">
+            All Questions
+          </button>
+          <button class="category-tab" data-category="programs">
+            Programs
+          </button>
+          <button class="category-tab" data-category="nutrition">
+            Nutrition
+          </button>
+          <button class="category-tab" data-category="training">
+            Training
+          </button>
+          <button class="category-tab" data-category="pricing">Pricing</button>
+          <button class="category-tab" data-category="general">General</button>
+        </div>
+      </div>
+    </section>
+    <!-- FAQ Categories End -->
+
+    <!-- FAQ Content Section -->
+    <section class="faq-content-section">
+      <div class="container">
+        <!-- Programs Category -->
+        <div class="faq-category" data-category="programs">
+          <div class="category-header">
+            <div class="category-icon">
+              <i class="fas fa-dumbbell"></i>
+            </div>
+            <h2>Programs & Services</h2>
+            <p>Questions about our fitness programs and coaching services</p>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>What is The Perfect Scale program?</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                The Perfect Scale is our signature 16-week weight loss program
+                designed specifically for women over 40. It combines
+                personalized nutrition, strength training, and holistic wellness
+                strategies to help you lose weight, build strength, and create
+                sustainable healthy habits.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>How does the 16-week program work?</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                The program is structured in phases, starting with assessment
+                and goal setting, followed by personalized meal planning,
+                exercise routines, and weekly coaching sessions. You'll receive
+                step-by-step guidance, progress tracking, and ongoing support
+                throughout your transformation journey.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>Do I need a gym membership to participate?</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                No! Our programs are designed to work at home with minimal
+                equipment. We provide bodyweight exercises and routines that can
+                be done in your living room. However, if you have access to a
+                gym, we can incorporate that into your personalized plan.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>
+                What's the difference between group training and personal
+                training?
+              </h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Group training offers a supportive community environment with
+                scheduled sessions and group accountability. Personal training
+                provides one-on-one attention with customized programs tailored
+                specifically to your needs, goals, and schedule. Both options
+                include nutrition guidance and ongoing support.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>Can I join if I'm a beginner?</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Absolutely! Our programs are designed for all fitness levels,
+                from complete beginners to those with more experience. We'll
+                assess your current fitness level and create a program that's
+                appropriate for where you are right now, with modifications and
+                progressions built in.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>What is the Align program?</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Align is our comprehensive wellness program that focuses on
+                balancing hormones, improving metabolism, and creating alignment
+                between your body, mind, and lifestyle. It addresses stress
+                management, sleep optimization, and metabolic health for women
+                in midlife.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nutrition Category -->
+        <div class="faq-category" data-category="nutrition">
+          <div class="category-header">
+            <div class="category-icon">
+              <i class="fas fa-apple-alt"></i>
+            </div>
+            <h2>Nutrition & Meal Planning</h2>
+            <p>Questions about our nutrition programs and meal plans</p>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>Will I receive a personalized meal plan?</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Yes! Every program includes a customized nutrition plan based on
+                your preferences, dietary restrictions, and goals. We'll work
+                with foods you enjoy and create a plan that fits your lifestyle,
+                with balanced macros designed to burn fat while maintaining
+                muscle.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>Do I need to count calories or macros?</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                We use a simplified point system that makes tracking easy
+                without the stress of counting every calorie. Our system
+                accounts for food choices, planning, sleep, and
+                meditation—helping you stay accountable while keeping things
+                manageable for your busy life.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>Can the program accommodate dietary restrictions?</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Absolutely! We work with vegetarian, vegan, gluten-free,
+                dairy-free, and other dietary restrictions. During your initial
+                consultation, we'll discuss your needs and preferences to create
+                a plan that works for you.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>What are the "3 rules of fat" you teach?</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                The 3 rules of fat are fundamental principles we teach about how
+                your body processes and stores fat. These science-backed rules
+                help you understand nutrition in a way that makes sustainable
+                fat loss achievable. You'll learn these during the program.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>Do I need to buy special foods or supplements?</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                No special foods are required! We work with regular grocery
+                store foods. While we do offer Massi protein powder (designed
+                specifically for women over 40), supplements are optional and
+                we'll guide you on what might be beneficial for your specific
+                needs.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>How flexible is the meal plan?</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Our meal plans are designed to be flexible and adaptable. We
+                understand that life happens—social events, travel, busy
+                schedules. We'll teach you how to make smart choices in any
+                situation while staying on track with your goals.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Training Category -->
+        <div class="faq-category" data-category="training">
+          <div class="category-header">
+            <div class="category-icon">
+              <i class="fas fa-running"></i>
+            </div>
+            <h2>Training & Exercise</h2>
+            <p>
+              Questions about workouts, training schedules, and exercise
+              programs
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>How many days per week do I need to exercise?</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Our programs typically include 3-5 workout sessions per week,
+                depending on your goals and schedule. We'll create a plan that
+                fits your life—no endless workouts required. Quality and
+                consistency matter more than quantity.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>What type of exercises are included?</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Our programs focus on strength training, metabolic conditioning,
+                and movement patterns designed for women over 40. Exercises are
+                low-impact, joint-friendly, and can be modified for any fitness
+                level. We emphasize building strength and improving mobility.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>What if I have injuries or physical limitations?</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                We work with many clients who have injuries or limitations.
+                During your assessment, we'll discuss your specific situation
+                and create modifications. Always consult with your healthcare
+                provider, and we'll design a program that respects your body's
+                needs.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>How long are the workout sessions?</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Workout sessions typically range from 30-45 minutes. We believe
+                in efficient, effective workouts that fit into your busy
+                schedule. You don't need to spend hours in the gym to see
+                results.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>Is the training suitable for women over 40?</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Yes! All our programs are specifically designed for women over
+                40, taking into account hormonal changes, metabolism shifts, and
+                the unique needs of midlife bodies. We focus on building
+                strength, preserving muscle mass, and optimizing metabolic
+                health.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>Do you provide exercise videos or demonstrations?</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Yes! You'll have access to video demonstrations of all
+                exercises, proper form cues, and modifications. Our online
+                platform includes a complete exercise library to guide you
+                through each movement safely and effectively.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pricing Category -->
+        <div class="faq-category" data-category="pricing">
+          <div class="category-header">
+            <div class="category-icon">
+              <i class="fas fa-dollar-sign"></i>
+            </div>
+            <h2>Pricing & Payment</h2>
+            <p>Questions about program costs, payment options, and refunds</p>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>How much does the program cost?</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Program pricing varies depending on the service you choose
+                (group training, personal training, or online courses). We offer
+                different packages to fit various budgets. Contact us for
+                current pricing and to discuss which option is best for you.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>Do you offer payment plans?</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Yes! We understand that investing in your health is important,
+                and we offer flexible payment plans to make our programs
+                accessible. We can discuss payment options during your
+                consultation.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>Is there a money-back guarantee?</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                We're confident in our programs and your success. We offer a
+                satisfaction guarantee with specific terms. Please contact us to
+                learn more about our guarantee policy and how we ensure you're
+                happy with your investment.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>Are there any hidden fees?</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                No hidden fees! The price you're quoted includes everything
+                outlined in your program package. Any optional add-ons (like
+                supplements or additional sessions) will be clearly discussed
+                and agreed upon upfront.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>Can I try a program before committing?</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Yes! We offer free initial consultations where you can learn
+                about our programs, ask questions, and see if we're a good fit.
+                This helps you make an informed decision before committing to a
+                program.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- General Category -->
+        <div class="faq-category" data-category="general">
+          <div class="category-header">
+            <div class="category-icon">
+              <i class="fas fa-question-circle"></i>
+            </div>
+            <h2>General Questions</h2>
+            <p>
+              General information about The Fitness Professor and our services
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>Who is Doug Dorsey, The Fitness Professor?</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Doug Dorsey is a best-selling author, certified personal
+                trainer, and transformation coach with over 20 years of
+                experience in the wellness industry and 25 years in education.
+                He specializes in helping women over 40 achieve lasting
+                transformation through science-backed methods.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>How quickly will I see results?</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Results vary by individual, but most clients start noticing
+                changes in energy, strength, and how their clothes fit within
+                the first 4-6 weeks. Sustainable weight loss typically occurs at
+                a rate of 1-2 pounds per week when following the program
+                consistently.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>What makes your approach different from other programs?</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Our approach is holistic, science-backed, and specifically
+                designed for women over 40. We focus on sustainable habits, not
+                quick fixes. We address the whole person—nutrition, exercise,
+                sleep, stress, and mindset—and provide personalized support
+                every step of the way.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>Do you offer online or in-person programs?</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                We offer both! Our online programs provide flexibility and can
+                be done from anywhere. We also offer in-person training and
+                consultations for those who prefer face-to-face interaction.
+                Many clients combine both approaches.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>What support do I receive during the program?</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                You'll receive weekly live coaching sessions, access to our
+                online community, progress tracking tools, email support, and
+                regular check-ins. We're here to keep you motivated,
+                accountable, and supported throughout your journey.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>Can I contact you if I have questions during the program?</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Absolutely! We encourage questions and communication. You can
+                reach us via email, through our online platform, or during your
+                scheduled coaching sessions. We're committed to your success and
+                are here to help whenever you need support.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>What happens after I complete the program?</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                After completing the program, you'll have the tools, knowledge,
+                and habits to maintain your results independently. We also offer
+                ongoing support options, maintenance programs, and advanced
+                coaching for those who want continued guidance.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- No Results Message -->
+        <div id="noResults" class="no-results" style="display: none">
+          <i class="fas fa-search"></i>
+          <h3>No results found</h3>
+          <p>
+            Try searching with different keywords or browse our categories
+            above.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- FAQ Content Section End -->
+
+    <!-- CTA Section -->
+    <section class="faq-cta">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Still Have Questions?</h2>
+          <p>
+            Can't find what you're looking for? We're here to help! Get in touch
+            with us and we'll answer any questions you have.
+          </p>
+          <div class="cta-buttons">
+            <a href="contact-us.html" class="btn-primary"
+              >Contact Us <i class="fas fa-arrow-right"></i
+            ></a>
+            <a href="about-us.html" class="btn-secondary"
+              >Learn More About Us <i class="fas fa-info-circle"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CTA Section End -->
+
+    <!-- Footer -->
+    <footer class="site-footer-v2">
+    <!-- Background Text Overlay -->
+    <div class="footer-bg-text">
+      THE <br />
+      FITNESS <br />
+      PROFESSOR
+    </div>
+
+    <div class="container footer-content-v2">
+      <div class="row">
+        <!-- Column 1: Brand -->
+        <div class="col-lg-3 col-md-12 mb-5 mb-lg-0">
+          <div class="site-brand">
+            <a href="index.html"><img src="images/logo-1.png" alt="" /></a>
+          </div>
+          <p class="footer-desc">
+          Look and feel better than you ever have with honest, straightforward fitness strategies from one of the top health experts.
+          </p>
+        </div>
+
+        <!-- Column 2: Begin Your Journey -->
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <h5>Services</h5>
+          <ul class="footer-links-v2">
+            <li><a href="perfect-scale.html">The Perfect Scale</a></li>
+            <li><a href="#">Align Weight Loss</a></li>
+            <li><a href="#">CT Medical Weight Loss and Beyond</a></li>
+            <li><a href="#">Massi Protein</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Community -->
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <h5>COMMUNITY</h5>
+          <ul class="footer-links-v2">
+            <li><a href="https://www.youtube.com/@tophealthco/podcasts">Youtube</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: About -->
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <h5>DOUG DORSEY</h5>
+          <ul class="footer-links-v2">
+            <li><a href="about-us.html">About</a></li>
+            <li><a href="#">Hire for Speaking</a></li>
+            <li><a href="https://weightloss.ctmedweightloss.com/4keys-to-permanent-weight-loss">Resources</a></li>
+            <li><a href="https://go.appointmentcore.com/book/wBmPWa">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 5: Legal -->
+        <div class="col-lg-3 col-md-6">
+          <h5>LEGAL INFORMATION</h5>
+          <ul class="footer-links-v2">
+            <li><a href="#">Disclaimer</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="privacy.policy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom-v2">
+      <div class="container container-bottom">
+        <div class="copy-text">
+          Copyright © 2026 Advanced Integrative Health Alliance.
+        </div>
+          <a href="#" class="back-to-top" id="backToTop">
+            <i class="fas fa-arrow-up"></i>
+          </a>
+      </div>
+    </div>
+  </footer>
+    <!-- Footer End -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script>
+      // FAQ Accordion
+      document.querySelectorAll(".faq-question").forEach((question) => {
+        question.addEventListener("click", function () {
+          const faqItem = this.parentElement;
+          const isActive = faqItem.classList.contains("active");
+
+          // Close all FAQ items in the same category
+          const category = faqItem.closest(".faq-category");
+          if (category) {
+            category.querySelectorAll(".faq-item").forEach((item) => {
+              if (item !== faqItem) {
+                item.classList.remove("active");
+              }
+            });
+          }
+
+          // Toggle clicked item
+          if (isActive) {
+            faqItem.classList.remove("active");
+          } else {
+            faqItem.classList.add("active");
+          }
+        });
+      });
+
+      // Category Tabs
+      document.querySelectorAll(".category-tab").forEach((tab) => {
+        tab.addEventListener("click", function () {
+          const category = this.getAttribute("data-category");
+
+          // Update active tab
+          document
+            .querySelectorAll(".category-tab")
+            .forEach((t) => t.classList.remove("active"));
+          this.classList.add("active");
+
+          // Show/hide categories
+          document.querySelectorAll(".faq-category").forEach((cat) => {
+            if (category === "all") {
+              cat.style.display = "block";
+            } else {
+              cat.style.display =
+                cat.getAttribute("data-category") === category
+                  ? "block"
+                  : "none";
+            }
+          });
+
+          // Scroll to first category
+          const firstCategory = document.querySelector(
+            '.faq-category[style*="block"], .faq-category:not([style*="none"])'
+          );
+          if (firstCategory) {
+            firstCategory.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+
+      // Search Functionality
+      const searchInput = document.getElementById("faqSearch");
+      const searchClear = document.getElementById("searchClear");
+      const searchResults = document.getElementById("searchResults");
+      const noResults = document.getElementById("noResults");
+
+      searchInput.addEventListener("input", function () {
+        const searchTerm = this.value.toLowerCase().trim();
+
+        if (searchTerm.length === 0) {
+          searchClear.style.display = "none";
+          searchResults.innerHTML = "";
+          document
+            .querySelectorAll(".faq-category")
+            .forEach((cat) => (cat.style.display = "block"));
+          document.querySelectorAll(".faq-item").forEach((item) => {
+            item.style.display = "block";
+            item.classList.remove("highlight");
+          });
+          noResults.style.display = "none";
+          return;
+        }
+
+        searchClear.style.display = "block";
+
+        let foundCount = 0;
+        const matchingItems = [];
+
+        document.querySelectorAll(".faq-item").forEach((item) => {
+          const question = item
+            .querySelector(".faq-question h4")
+            .textContent.toLowerCase();
+          const answer = item
+            .querySelector(".faq-answer p")
+            .textContent.toLowerCase();
+
+          if (question.includes(searchTerm) || answer.includes(searchTerm)) {
+            item.style.display = "block";
+            item.classList.add("highlight");
+            foundCount++;
+
+            const category = item.closest(".faq-category");
+            if (category) {
+              category.style.display = "block";
+              matchingItems.push({
+                item: item,
+                category: category.getAttribute("data-category"),
+                question: item.querySelector(".faq-question h4").textContent,
+              });
+            }
+          } else {
+            item.style.display = "none";
+            item.classList.remove("highlight");
+          }
+        });
+
+        // Show/hide categories based on results
+        document.querySelectorAll(".faq-category").forEach((cat) => {
+          const hasVisibleItems =
+            cat.querySelectorAll('.faq-item[style*="block"]').length > 0;
+          cat.style.display = hasVisibleItems ? "block" : "none";
+        });
+
+        // Show no results message
+        if (foundCount === 0) {
+          noResults.style.display = "block";
+          searchResults.innerHTML = "";
+        } else {
+          noResults.style.display = "none";
+          // Show search results summary
+          searchResults.innerHTML = `<div class="search-summary">Found ${foundCount} result${
+            foundCount !== 1 ? "s" : ""
+          }</div>`;
+        }
+
+        // Auto-expand first matching item
+        if (matchingItems.length > 0) {
+          matchingItems[0].item.classList.add("active");
+          matchingItems[0].item.scrollIntoView({
+            behavior: "smooth",
+            block: "center",
+          });
+        }
+      });
+
+      searchClear.addEventListener("click", function () {
+        searchInput.value = "";
+        searchInput.dispatchEvent(new Event("input"));
+        searchInput.focus();
+      });
+
+      // Smooth scroll for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+    </script>
+
+    <!-- Header script -->
+   <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var toggle = document.getElementById("menuToggle");
+      var header = document.querySelector(".site-header");
+
+      if (toggle && header) {
+        toggle.addEventListener("click", function () {
+          header.classList.toggle("active");
+        });
+      }
+    });
+  </script>
+  <!-- Back to top btn  -->
+
+<script>
+  const backToTop = document.getElementById("backToTop");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+      backToTop.classList.add("show");
+    } else {
+      backToTop.classList.remove("show");
+    }
+  });
+</script>
+  </body>
+</html>
