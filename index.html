@@ -31,6 +31,144 @@
     display: none;
   }
 
+  .home-banner-v2 {
+    min-height: 100vh;
+    position: relative;
+    background: #000;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px 0px;
+    overflow: hidden;
+  }
+
+  /* BG Layers */
+  .bg-layer {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0;
+    transition: opacity 1s ease;
+    z-index: 0;
+  }
+
+  .bg-layer.visible {
+    opacity: 1;
+  }
+
+  /* Overlay upar rahega */
+  .banner-overlay-v3 {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right,
+        rgba(0, 0, 0, 0.9) 0%,
+        rgba(0, 0, 0, 0.4) 100%);
+    z-index: 1;
+  }
+
+  /* Slider */
+  .hero-content-slider {
+    position: relative;
+    overflow: hidden;
+    min-height: 300px;
+  }
+
+  .hero-slide {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  .hero-slide.active {
+    display: block;
+    position: relative;
+  }
+
+  .word-line {
+    display: block;
+  }
+
+  .slide-btn {
+    display: inline-block;
+  }
+
+  /* Arrows */
+  .hero-prev,
+  .hero-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+
+  .hero-prev {
+    left: 25px;
+  }
+
+  .hero-next {
+    right: 25px;
+  }
+
+  .hero-prev:hover,
+  .hero-next:hover {
+    background: #fe0000;
+    border-color: #fe0000;
+  }
+
+  .hero-prev svg,
+  .hero-next svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Dots */
+  .hero-slider-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 50px;
+  }
+
+  .hero-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.35);
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: background 0.3s ease, width 0.3s ease, border-radius 0.3s ease;
+  }
+
+  .hero-dot.active {
+    background: #fe0000;
+    width: 26px;
+    border-radius: 4px;
+  }
+
+  /* Content z-index */
+  .hero-center-container {
+    position: relative;
+    z-index: 2;
+    margin-top: 80px;
+  }
 
   @media (max-width:768px) {
 
@@ -146,342 +284,242 @@
 
 
 
-<!-- Enhanced Home Banner -->
-<section class="home-banner-v2" id="heroBanner">
-  <div class="banner-overlay-v3"></div>
+  <!-- Enhanced Home Banner -->
+  <section class="home-banner-v2" id="heroBanner">
+    <div class="banner-overlay-v3"></div>
 
-  <!-- BG Layers -->
-  <div class="bg-layer" id="bgLayer1" style="background-image: url('images/women.avif');"></div>
-  <div class="bg-layer" id="bgLayer2" style="background-image: url('images/women.avif');"></div>
+    <!-- BG Layers -->
+    <div class="bg-layer" id="bgLayer1" style="background-image: url('images/women.avif');"></div>
+    <div class="bg-layer" id="bgLayer2" style="background-image: url('images/women.avif');"></div>
 
-  <!-- Top Navigation -->
-  <header class="hero-nav-v2" style="display: none">
-    <div class="container container-hero">
-      <div class="hero-nav-wrapper">
-        <div class="hero-logo">
-          <a href="index.html">
-            <img src="images/logo-1.png" alt="Logo" />
-          </a>
+    <!-- Top Navigation -->
+    <header class="hero-nav-v2" style="display: none">
+      <div class="container container-hero">
+        <div class="hero-nav-wrapper">
+          <div class="hero-logo">
+            <a href="index.html">
+              <img src="images/logo-1.png" alt="Logo" />
+            </a>
+          </div>
+          <nav class="hero-menu-v2">
+            <ul class="main-menu">
+              <li class="has-dropdown">
+                <a href="index.html">Home</a>
+                <ul class="dropdown">
+                  <li><a href="index-2.html">Home 2</a></li>
+                </ul>
+              </li>
+              <li class="has-dropdown">
+                <a href="#">Services</a>
+                <ul class="dropdown">
+                  <li><a href="perfect-scale.html">The Perfect Scale</a></li>
+                  <li><a href="align.html">Align Weight Loss</a></li>
+                  <li><a href="weight-loss.html">CT Medical Weight Loss and Beyond</a></li>
+                  <li><a href="massi.html">Massi Protein</a></li>
+                </ul>
+              </li>
+              <li><a href="about-us.html">About Us</a></li>
+              <li><a href="podcast.html" class="active">Podcast</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="contact-us.html">Contact</a></li>
+              <li><a href="#">Login</a></li>
+            </ul>
+          </nav>
+          <div class="hero-cta-nav">
+            <a href="#" class="btn-model-nation">MODEL NATION</a>
+          </div>
         </div>
-        <nav class="hero-menu-v2">
-          <ul class="main-menu">
-            <li class="has-dropdown">
-              <a href="index.html">Home</a>
-              <ul class="dropdown">
-                <li><a href="index-2.html">Home 2</a></li>
-              </ul>
-            </li>
-            <li class="has-dropdown">
-              <a href="#">Services</a>
-              <ul class="dropdown">
-                <li><a href="perfect-scale.html">The Perfect Scale</a></li>
-                <li><a href="align.html">Align Weight Loss</a></li>
-                <li><a href="weight-loss.html">CT Medical Weight Loss and Beyond</a></li>
-                <li><a href="massi.html">Massi Protein</a></li>
-              </ul>
-            </li>
-            <li><a href="about-us.html">About Us</a></li>
-            <li><a href="podcast.html" class="active">Podcast</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="contact-us.html">Contact</a></li>
-            <li><a href="#">Login</a></li>
-          </ul>
-        </nav>
-        <div class="hero-cta-nav">
-          <a href="#" class="btn-model-nation">MODEL NATION</a>
+      </div>
+    </header>
+
+    <!-- LEFT ARROW -->
+    <button class="hero-prev" aria-label="Previous">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+        stroke-linejoin="round">
+        <polyline points="15 18 9 12 15 6"></polyline>
+      </svg>
+    </button>
+
+    <!-- RIGHT ARROW -->
+    <button class="hero-next" aria-label="Next">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+        stroke-linejoin="round">
+        <polyline points="9 18 15 12 9 6"></polyline>
+      </svg>
+    </button>
+
+    <!-- Main Content -->
+    <div class="container hero-center-container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="hero-content-slider">
+
+            <!-- Slide 1 -->
+            <div class="hero-slide active" data-bg="images/women.avif">
+              <div class="hero-content-v3">
+                <h1 class="hero-title-v3">
+                  <span class="word-line">Burn Fat, Boost Energy,</span>
+                  <span class="word-line">and Feel Strong in Your 40s</span>
+                  <span class="word-line">and Beyond</span>
+                </h1>
+                <p class="hero-desc-v3">
+                  <span class="word-line">Science-backed fitness and lifestyle solutions</span>
+                  <span class="word-line">designed for women navigating midlife.</span>
+                </p>
+                <div class="hero-btn-v3">
+                  <a href="#" class="btn-primary slide-btn">Start My Transformation Plan</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 — apni image path yahan lagao -->
+            <div class="hero-slide" data-bg="images/banner-image-3.jpeg">
+              <div class="hero-content-v3">
+                <h1 class="hero-title-v3">
+                  <span class="word-line">The 4 Keys to Permanent </span>
+                  <span class="word-line">Weight Loss No</span>
+                  <span class="word-line"> One Ever Taught You</span>
+                </h1>
+                <p class="hero-desc-v3">
+                  <span class="word-line">Discover the four-step framework that rewires your mindset,</span>
+                  <span class="word-line">simplifies the process, and makes sustainable weight loss feel
+                    effortless.</span>
+                </p>
+                <div class="hero-btn-v3">
+                  <a href="https://weightloss.ctmedweightloss.com/4keys-to-permanent-weight-loss" class="btn-primary slide-btn">Start the 4-Day Weight Loss Series</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 — apni image path yahan lagao -->
+            <div class="hero-slide" data-bg="images/banner-slide-2-home.jpg">
+              <div class="hero-content-v3">
+                <h1 class="hero-title-v3">
+                  <span class="word-line">Join Thousands of Women</span>
+                  <span class="word-line">Who Have Already</span>
+                  <span class="word-line">Transformed Their Lives</span>
+                </h1>
+                <p class="hero-desc-v3">
+                  <span class="word-line">Real results. Real community.</span>
+                  <span class="word-line">Real support — every step of your journey.</span>
+                </p>
+                <div class="hero-btn-v3">
+                  <a href="#" class="btn-primary slide-btn">Join the Community</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Dots -->
+          <div class="hero-slider-dots">
+            <button class="hero-dot active" data-index="0"></button>
+            <button class="hero-dot" data-index="1"></button>
+            <button class="hero-dot" data-index="2"></button>
+          </div>
         </div>
       </div>
     </div>
-  </header>
 
-  <!-- LEFT ARROW -->
-  <button class="hero-prev" aria-label="Previous">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-      <polyline points="15 18 9 12 15 6"></polyline>
-    </svg>
-  </button>
+  </section>
 
-  <!-- RIGHT ARROW -->
-  <button class="hero-next" aria-label="Next">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-      <polyline points="9 18 15 12 9 6"></polyline>
-    </svg>
-  </button>
 
-  <!-- Main Content -->
-  <div class="container hero-center-container">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="hero-content-slider">
 
-          <!-- Slide 1 -->
-          <div class="hero-slide active" data-bg="images/women.avif">
-            <div class="hero-content-v3">
-              <h1 class="hero-title-v3">
-                <span class="word-line">Burn Fat, Boost Energy,</span>
-                <span class="word-line">and Feel Strong in Your 40s</span>
-                <span class="word-line">and Beyond</span>
-              </h1>
-              <p class="hero-desc-v3">
-                <span class="word-line">Science-backed fitness and lifestyle solutions</span>
-                <span class="word-line">designed for women navigating midlife.</span>
-              </p>
-              <div class="hero-btn-v3">
-                <a href="#" class="btn-primary slide-btn">Start My Transformation Plan</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 2 — apni image path yahan lagao -->
-          <div class="hero-slide" data-bg="images/banner-slide-2.webp">
-            <div class="hero-content-v3">
-              <h1 class="hero-title-v3">
-                <span class="word-line">The 4 Keys to Permanent </span>
-                <span class="word-line">Weight Loss No</span>
-                <span class="word-line"> One Ever Taught You</span>
-              </h1>
-              <p class="hero-desc-v3">
-                <span class="word-line">Discover the four-step framework that rewires your mindset,</span>
-                <span class="word-line">simplifies the process, and makes sustainable weight loss feel effortless.</span>
-              </p>
-              <div class="hero-btn-v3">
-                <a href="#" class="btn-primary slide-btn">Start the 4-Day Weight Loss Series</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 3 — apni image path yahan lagao -->
-          <div class="hero-slide" data-bg="images/women3.avif">
-            <div class="hero-content-v3">
-              <h1 class="hero-title-v3">
-                <span class="word-line">Join Thousands of Women</span>
-                <span class="word-line">Who Have Already</span>
-                <span class="word-line">Transformed Their Lives</span>
-              </h1>
-              <p class="hero-desc-v3">
-                <span class="word-line">Real results. Real community.</span>
-                <span class="word-line">Real support — every step of your journey.</span>
-              </p>
-              <div class="hero-btn-v3">
-                <a href="#" class="btn-primary slide-btn">Join the Community</a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Dots -->
-        <div class="hero-slider-dots">
-          <button class="hero-dot active" data-index="0"></button>
-          <button class="hero-dot" data-index="1"></button>
-          <button class="hero-dot" data-index="2"></button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-</section>
-
-  <style>
-/* home-banner-v2 se background property hata do aur yeh rakho */
-.home-banner-v2 {
-  min-height: 100vh;
-  position: relative;
-  background: #000;
-  background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 100px 0px;
-  overflow: hidden;
-}
-
-/* BG Layers */
-.bg-layer {
-  position: absolute;
-  inset: 0;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  opacity: 0;
-  transition: opacity 1s ease;
-  z-index: 0;
-}
-
-.bg-layer.visible {
-  opacity: 1;
-}
-
-/* Overlay upar rahega */
-.banner-overlay-v3 {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to right,
-    rgba(0,0,0,0.9) 0%,
-    rgba(0,0,0,0.4) 100%);
-  z-index: 1;
-}
-
-/* Slider */
-.hero-content-slider {
-  position: relative;
-  overflow: hidden;
-  min-height: 300px;
-}
-
-.hero-slide {
-  display: none;
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-}
-
-.hero-slide.active {
-  display: block;
-  position: relative;
-}
-
-.word-line {
-  display: block;
-}
-
-.slide-btn {
-  display: inline-block;
-}
-
-/* Arrows */
-.hero-prev, .hero-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  border: 2px solid rgba(255,255,255,0.5);
-  background: transparent;
-  color: #fff;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease;
-}
-.hero-prev { left: 25px; }
-.hero-next { right: 25px; }
-.hero-prev:hover, .hero-next:hover { background: #fe0000; border-color: #fe0000; }
-.hero-prev svg, .hero-next svg { width: 20px; height: 20px; }
-
-/* Dots */
-.hero-slider-dots { display: flex; justify-content: center; gap: 8px; margin-top: 50px; }
-.hero-dot {
-  width: 9px; height: 9px; border-radius: 50%;
-  background: rgba(255,255,255,0.35); border: none; cursor: pointer; padding: 0;
-  transition: background 0.3s ease, width 0.3s ease, border-radius 0.3s ease;
-}
-.hero-dot.active { background: #fe0000; width: 26px; border-radius: 4px; }
-
-/* Content z-index */
-.hero-center-container { position: relative; z-index: 2; margin-top: 80px; }
-  </style>
-   
   <!-- GSAP -->
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script>
-(function () {
-  const slides   = document.querySelectorAll('.hero-slide');
-  const dots     = document.querySelectorAll('.hero-dot');
-  const prevBtn  = document.querySelector('.hero-prev');
-  const nextBtn  = document.querySelector('.hero-next');
-  const bgLayer1 = document.getElementById('bgLayer1');
-  const bgLayer2 = document.getElementById('bgLayer2');
-  let current    = 0;
-  let animating  = false;
-  let timer;
-  let activeBg   = bgLayer1; // konsa layer dikhna chahiye
+  <script>
+    (function () {
+      const slides = document.querySelectorAll('.hero-slide');
+      const dots = document.querySelectorAll('.hero-dot');
+      const prevBtn = document.querySelector('.hero-prev');
+      const nextBtn = document.querySelector('.hero-next');
+      const bgLayer1 = document.getElementById('bgLayer1');
+      const bgLayer2 = document.getElementById('bgLayer2');
+      let current = 0;
+      let animating = false;
+      let timer;
+      let activeBg = bgLayer1; // konsa layer dikhna chahiye
 
-  // BG change function
-  function changeBg(slide) {
-    const imgUrl = slide.getAttribute('data-bg');
-    const incoming = activeBg === bgLayer1 ? bgLayer2 : bgLayer1;
+      // BG change function
+      function changeBg(slide) {
+        const imgUrl = slide.getAttribute('data-bg');
+        const incoming = activeBg === bgLayer1 ? bgLayer2 : bgLayer1;
 
-    incoming.style.backgroundImage = "url('" + imgUrl + "')";
-    incoming.classList.add('visible');
-    activeBg.classList.remove('visible');
-    activeBg = incoming;
-  }
+        incoming.style.backgroundImage = "url('" + imgUrl + "')";
+        incoming.classList.add('visible');
+        activeBg.classList.remove('visible');
+        activeBg = incoming;
+      }
 
-  // Text animate IN
-  function animateIn(slide) {
-    const lines = slide.querySelectorAll('.word-line');
-    const btn   = slide.querySelector('.slide-btn');
-    gsap.set(lines, { y: 50, opacity: 0 });
-    gsap.set(btn,   { y: 25, opacity: 0 });
-    gsap.to(lines, { y: 0, opacity: 1, duration: 0.65, stagger: 0.1, ease: 'power3.out' });
-    gsap.to(btn,   { y: 0, opacity: 1, duration: 0.5, delay: lines.length * 0.1 + 0.15, ease: 'power2.out' });
-  }
+      // Text animate IN
+      function animateIn(slide) {
+        const lines = slide.querySelectorAll('.word-line');
+        const btn = slide.querySelector('.slide-btn');
+        gsap.set(lines, { y: 50, opacity: 0 });
+        gsap.set(btn, { y: 25, opacity: 0 });
+        gsap.to(lines, { y: 0, opacity: 1, duration: 0.65, stagger: 0.1, ease: 'power3.out' });
+        gsap.to(btn, { y: 0, opacity: 1, duration: 0.5, delay: lines.length * 0.1 + 0.15, ease: 'power2.out' });
+      }
 
-  // Text animate OUT
-  function animateOut(slide, direction, onComplete) {
-    const lines = slide.querySelectorAll('.word-line');
-    const btn   = slide.querySelector('.slide-btn');
-    const xOut  = direction === 'next' ? -60 : 60;
-    gsap.to([...lines, btn], { x: xOut, opacity: 0, duration: 0.35, stagger: 0.04, ease: 'power2.in', onComplete });
-  }
+      // Text animate OUT
+      function animateOut(slide, direction, onComplete) {
+        const lines = slide.querySelectorAll('.word-line');
+        const btn = slide.querySelector('.slide-btn');
+        const xOut = direction === 'next' ? -60 : 60;
+        gsap.to([...lines, btn], { x: xOut, opacity: 0, duration: 0.35, stagger: 0.04, ease: 'power2.in', onComplete });
+      }
 
-  function resetSlide(slide) {
-    const lines = slide.querySelectorAll('.word-line');
-    const btn   = slide.querySelector('.slide-btn');
-    gsap.set(lines, { x: 0, y: 50, opacity: 0 });
-    gsap.set(btn,   { x: 0, y: 25, opacity: 0 });
-  }
+      function resetSlide(slide) {
+        const lines = slide.querySelectorAll('.word-line');
+        const btn = slide.querySelector('.slide-btn');
+        gsap.set(lines, { x: 0, y: 50, opacity: 0 });
+        gsap.set(btn, { x: 0, y: 25, opacity: 0 });
+      }
 
-  function goTo(index, direction) {
-    if (animating) return;
-    animating = true;
+      function goTo(index, direction) {
+        if (animating) return;
+        animating = true;
 
-    const oldSlide = slides[current];
-    dots[current].classList.remove('active');
-    current = (index + slides.length) % slides.length;
-    const newSlide = slides[current];
-    dots[current].classList.add('active');
+        const oldSlide = slides[current];
+        dots[current].classList.remove('active');
+        current = (index + slides.length) % slides.length;
+        const newSlide = slides[current];
+        dots[current].classList.add('active');
 
-    // BG change
-    changeBg(newSlide);
+        // BG change
+        changeBg(newSlide);
 
-    animateOut(oldSlide, direction, () => {
-      oldSlide.classList.remove('active');
-      resetSlide(oldSlide);
-      newSlide.classList.add('active');
-      animateIn(newSlide);
-      setTimeout(() => { animating = false; }, 700);
-    });
-  }
+        animateOut(oldSlide, direction, () => {
+          oldSlide.classList.remove('active');
+          resetSlide(oldSlide);
+          newSlide.classList.add('active');
+          animateIn(newSlide);
+          setTimeout(() => { animating = false; }, 700);
+        });
+      }
 
-  // Init
-  changeBg(slides[0]);
-  animateIn(slides[0]);
+      // Init
+      changeBg(slides[0]);
+      animateIn(slides[0]);
 
-  nextBtn.addEventListener('click', () => { goTo(current + 1, 'next'); resetTimer(); });
-  prevBtn.addEventListener('click', () => { goTo(current - 1, 'prev'); resetTimer(); });
-  dots.forEach(dot => dot.addEventListener('click', () => {
-    const idx = parseInt(dot.dataset.index);
-    if (idx === current) return;
-    goTo(idx, idx > current ? 'next' : 'prev');
-    resetTimer();
-  }));
+      nextBtn.addEventListener('click', () => { goTo(current + 1, 'next'); resetTimer(); });
+      prevBtn.addEventListener('click', () => { goTo(current - 1, 'prev'); resetTimer(); });
+      dots.forEach(dot => dot.addEventListener('click', () => {
+        const idx = parseInt(dot.dataset.index);
+        if (idx === current) return;
+        goTo(idx, idx > current ? 'next' : 'prev');
+        resetTimer();
+      }));
 
-  function resetTimer() {
-    clearInterval(timer);
-    timer = setInterval(() => goTo(current + 1, 'next'), 5000);
-  }
+      function resetTimer() {
+        clearInterval(timer);
+        timer = setInterval(() => goTo(current + 1, 'next'), 5000);
+      }
 
-  resetTimer();
-})();
-</script>
+      resetTimer();
+    })();
+  </script>
   <!-- Enhanced Home Banner End -->
 
 
