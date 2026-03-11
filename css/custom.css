@@ -1704,6 +1704,7 @@ header.site-header .header-top a {
 .goal-top-label {
   margin-bottom: 20px;
   position: relative;
+  min-height: 60px;
 }
 
 .goal-top-label span {
@@ -1727,7 +1728,7 @@ header.site-header .header-top a {
   position: relative;
   border-radius: 0px;
   overflow: hidden;
-  aspect-ratio: 4 / 5.5;
+  aspect-ratio: 4 / 6.5;
 }
 
 .goal-image-box img {
