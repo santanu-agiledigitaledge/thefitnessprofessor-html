@@ -179,7 +179,7 @@
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
 }
 .info-card a{
-text-decoration: none;
+text-decoration: none !important;
 color: #000;
 }
 .info-card a > p {
