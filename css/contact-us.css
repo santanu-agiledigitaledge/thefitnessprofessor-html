@@ -178,7 +178,13 @@
     transform: translateY(-10px);
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
 }
-
+.info-card a{
+text-decoration: none;
+color: #000;
+}
+.info-card a > p {
+ color: #666 !important;
+}
 .info-icon {
     width: 100px;
     height: 100px;
@@ -212,7 +218,7 @@
 
 .info-card > p {
     font-size: 15px;
-    color: #666;
+    color: #666 !important;
 }
 
 .info-details {
