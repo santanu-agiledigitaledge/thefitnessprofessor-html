@@ -3529,6 +3529,11 @@ html {
 
 /* Combined Podcast Section */
 .combined-podcast-section {
+
+    background: url(../images/podcast-bg.svg) no-repeat center center;
+    background-size: 100% 100%;
+    z-index: 0;
+
   background-color: #0b0b0b;
   padding: 80px 0;
 }
